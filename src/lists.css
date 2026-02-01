@@ -47,3 +47,27 @@ li > ol {
   margin-top: var(--space-xs);
   margin-bottom: 0;
 }
+
+/* Description Lists */
+dl {
+  margin: var(--space-md) 0;
+}
+
+dt {
+  font-weight: 700;
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-xs);
+}
+
+dt:first-child {
+  margin-top: 0;
+}
+
+dd {
+  margin-left: var(--space-lg);
+  margin-bottom: var(--space-sm);
+}
+
+dd:last-child {
+  margin-bottom: 0;
+}
