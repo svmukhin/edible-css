@@ -124,3 +124,32 @@ meter:-moz-meter-sub-optimum::-moz-meter-bar {
 meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
   background-color: #cf222e;
 }
+
+/* Output Element */
+output {
+  display: inline-block;
+  padding: var(--space-xs) var(--space-sm);
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.875em;
+}
+
+/* Template Element */
+template {
+  display: none;
+}
+
+/* Figure and Figcaption */
+figure {
+  margin: var(--space-md) 0;
+  text-align: center;
+}
+
+figcaption {
+  margin-top: var(--space-sm);
+  font-size: var(--font-sm);
+  color: var(--text-secondary);
+  font-style: italic;
+}
