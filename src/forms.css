@@ -234,3 +234,17 @@ input[type="radio"]:focus {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
 }
+
+/* Fieldset and Legend */
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: var(--space-md);
+  margin: var(--space-md) 0;
+}
+
+legend {
+  font-weight: 700;
+  padding: 0 var(--space-xs);
+  color: var(--text-primary);
+}
