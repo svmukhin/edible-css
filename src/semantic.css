@@ -45,6 +45,18 @@ main {
   margin: var(--space-lg) 0;
 }
 
+/* Article */
+article {
+  margin: var(--space-xl) 0;
+  padding: var(--space-lg);
+  background-color: var(--bg-primary);
+  border-left: 4px solid var(--accent);
+}
+
+article:first-child {
+  margin-top: 0;
+}
+
 /* Address */
 address {
   font-style: italic;
