@@ -1,6 +1,52 @@
 /* Dark Mode Overrides 
- * The dark mode colors are already defined in tokens.css using @media (prefers-color-scheme: dark)
- * This file can be used for additional dark mode specific adjustments if needed
+ * Core dark mode colors are defined in tokens.css using @media (prefers-color-scheme: dark)
+ * This file provides element-specific adjustments for optimal dark mode appearance
  */
 
-/* Additional dark mode adjustments can be added here */
+@media (prefers-color-scheme: dark) {
+  /* Reduce brightness of images and media in dark mode */
+  img, video, iframe {
+    opacity: 0.9;
+  }
+
+  /* Soften borders in dark mode */
+  table, th, td, hr, fieldset {
+    border-color: var(--border);
+    opacity: 0.8;
+  }
+
+  /* Enhance code block visibility in dark mode */
+  pre {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
+  }
+
+  /* Adjust form element backgrounds for better contrast */
+  input:not([type="checkbox"]):not([type="radio"]),
+  textarea,
+  select {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--border);
+  }
+
+  /* Enhance focus states in dark mode */
+  input:focus,
+  textarea:focus,
+  select:focus,
+  button:focus {
+    outline-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.3);
+  }
+
+  /* Adjust blockquote styling for dark mode */
+  blockquote {
+    border-left-color: var(--accent);
+    background: rgba(255, 255, 255, 0.03);
+  }
+
+  /* Soften mark/highlight in dark mode */
+  mark {
+    background: rgba(255, 208, 0, 0.2);
+    color: var(--text-primary);
+  }
+}
