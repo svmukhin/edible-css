@@ -83,6 +83,15 @@ header {
   border-bottom: 1px solid var(--border);
 }
 
+/* Footer */
+footer {
+  margin: var(--space-lg) 0 0 0;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 0.9em;
+}
+
 /* Address */
 address {
   font-style: italic;
