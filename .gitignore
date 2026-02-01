@@ -94,6 +94,12 @@ __pycache__/
 .coverage
 htmlcov/
 
+# BackstopJS Visual Regression Testing
+test/backstop/test/
+test/backstop/html_report/
+test/backstop/ci_report/
+# Keep backstop.json and reference/ screenshots in version control
+
 # Python
 *.py[cod]
 __pycache__/
