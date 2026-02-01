@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Elements Test - EdibleCSS</title>
+  <link rel="stylesheet" href="../../dist/edible.css">
+</head>
+<body>
+  <h1>Form Elements</h1>
+
+  <form>
+    <fieldset>
+      <legend>Text Inputs</legend>
+      
+      <label for="text-input">Text Input:</label>
+      <input type="text" id="text-input" name="text-input" placeholder="Enter text">
+
+      <label for="email-input">Email Input:</label>
+      <input type="email" id="email-input" name="email-input" placeholder="user@example.com">
+
+      <label for="password-input">Password Input:</label>
+      <input type="password" id="password-input" name="password-input" placeholder="Password">
+
+      <label for="number-input">Number Input:</label>
+      <input type="number" id="number-input" name="number-input" placeholder="42">
+
+      <label for="url-input">URL Input:</label>
+      <input type="url" id="url-input" name="url-input" placeholder="https://example.com">
+
+      <label for="tel-input">Tel Input:</label>
+      <input type="tel" id="tel-input" name="tel-input" placeholder="+1-555-555-5555">
+
+      <label for="search-input">Search Input:</label>
+      <input type="search" id="search-input" name="search-input" placeholder="Search...">
+    </fieldset>
+
+    <fieldset>
+      <legend>Textarea</legend>
+      
+      <label for="textarea">Message:</label>
+      <textarea id="textarea" name="textarea" rows="5" placeholder="Enter your message here..."></textarea>
+    </fieldset>
+
+    <fieldset>
+      <legend>Selection Controls</legend>
+      
+      <label for="select">Select Dropdown:</label>
+      <select id="select" name="select">
+        <option value="">Choose an option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+      </select>
+
+      <label for="select-multiple">Multiple Select:</label>
+      <select id="select-multiple" name="select-multiple" multiple size="4">
+        <optgroup label="Group 1">
+          <option value="a">Option A</option>
+          <option value="b">Option B</option>
+        </optgroup>
+        <optgroup label="Group 2">
+          <option value="c">Option C</option>
+          <option value="d">Option D</option>
+        </optgroup>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Checkboxes</legend>
+      
+      <label>
+        <input type="checkbox" name="checkbox1" value="1" checked>
+        Checkbox 1 (checked)
+      </label>
+
+      <label>
+        <input type="checkbox" name="checkbox2" value="2">
+        Checkbox 2
+      </label>
+
+      <label>
+        <input type="checkbox" name="checkbox3" value="3">
+        Checkbox 3
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Radio Buttons</legend>
+      
+      <label>
+        <input type="radio" name="radio" value="1" checked>
+        Radio Option 1 (checked)
+      </label>
+
+      <label>
+        <input type="radio" name="radio" value="2">
+        Radio Option 2
+      </label>
+
+      <label>
+        <input type="radio" name="radio" value="3">
+        Radio Option 3
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Other Inputs</legend>
+      
+      <label for="date-input">Date:</label>
+      <input type="date" id="date-input" name="date-input">
+
+      <label for="time-input">Time:</label>
+      <input type="time" id="time-input" name="time-input">
+
+      <label for="color-input">Color:</label>
+      <input type="color" id="color-input" name="color-input" value="#0969da">
+
+      <label for="range-input">Range:</label>
+      <input type="range" id="range-input" name="range-input" min="0" max="100" value="50">
+
+      <label for="file-input">File:</label>
+      <input type="file" id="file-input" name="file-input">
+    </fieldset>
+
+    <fieldset>
+      <legend>Buttons</legend>
+      
+      <button type="submit">Submit Button</button>
+      <button type="button">Regular Button</button>
+      <button type="reset">Reset Button</button>
+      
+      <input type="submit" value="Input Submit">
+      <input type="button" value="Input Button">
+      <input type="reset" value="Input Reset">
+    </fieldset>
+
+    <fieldset disabled>
+      <legend>Disabled Fieldset</legend>
+      
+      <label for="disabled-input">Disabled Input:</label>
+      <input type="text" id="disabled-input" name="disabled-input" value="This is disabled">
+
+      <button type="button">Disabled Button</button>
+    </fieldset>
+  </form>
+</body>
+</html>
