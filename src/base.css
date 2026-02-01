@@ -40,7 +40,7 @@ body {
   line-height: 1.6;
   
   /* Content width constraint for optimal readability */
-  max-width: 75ch;
+  max-width: 70ch;
   margin: 0 auto;
   padding: 0 var(--space-md);
 }
@@ -49,12 +49,14 @@ body {
 @media (min-width: 768px) {
   body {
     padding: 0 var(--space-lg);
+    max-width: 90ch;
   }
 }
 
 @media (min-width: 1024px) {
   body {
     padding: 0 var(--space-xl);
+    max-width: 110ch;
   }
 }
 
