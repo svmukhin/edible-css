@@ -1,7 +1,14 @@
 /* Design Tokens */
 
 :root {
-  /* Colors will be defined in T023 */
+  /* Color Palette - Light Mode (GitHub-inspired) */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f6f8fa;
+  --text-primary: #24292f;
+  --text-secondary: #57606a;
+  --border-primary: #d0d7de;
+  --accent: #0969da;
+  
   /* Dark mode colors will be defined in T024 */
   /* Typography scale will be defined in T025 */
   /* Spacing system will be defined in T026 */
