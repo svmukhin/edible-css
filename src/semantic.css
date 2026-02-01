@@ -50,7 +50,8 @@ article {
   margin: var(--space-xl) 0;
   padding: var(--space-lg);
   background-color: var(--bg-primary);
-  border-left: 4px solid var(--accent);
+  border: 1px solid var(--border);
+  border-radius: 4px;
 }
 
 article:first-child {
