@@ -39,6 +39,12 @@ nav a:focus {
   outline-offset: 2px;
 }
 
+/* Main Content */
+main {
+  display: block;
+  margin: var(--space-lg) 0;
+}
+
 /* Address */
 address {
   font-style: italic;
