@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Code Elements Test - EdibleCSS</title>
+  <link rel="stylesheet" href="../../dist/edible.css">
+</head>
+<body>
+  <h1>Code and Quotation Elements</h1>
+
+  <h2>Inline Code</h2>
+  <p>Use the <code>console.log()</code> function to output messages. Variables like <code>userName</code> should be in camelCase.</p>
+
+  <p>CSS properties: <code>display: flex;</code> and <code>margin: 0 auto;</code></p>
+
+  <h2>Code Blocks</h2>
+  <pre><code>function fibonacci(n) {
+  if (n <= 1) return n;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+// Usage
+const result = fibonacci(10);
+console.log(result); // 55</code></pre>
+
+  <pre><code>/* CSS Example */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  max-width: 75ch;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}</code></pre>
+
+  <pre><code>&lt;!-- HTML Example --&gt;
+&lt;article&gt;
+  &lt;header&gt;
+    &lt;h2&gt;Article Title&lt;/h2&gt;
+    &lt;time datetime="2026-02-01"&gt;Feb 1, 2026&lt;/time&gt;
+  &lt;/header&gt;
+  &lt;p&gt;Article content goes here.&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+
+  <h2>Keyboard Input</h2>
+  <p>To save a file, press <kbd>Ctrl</kbd> + <kbd>S</kbd> on Windows/Linux or <kbd>Cmd</kbd> + <kbd>S</kbd> on macOS.</p>
+
+  <p>Common shortcuts:</p>
+  <ul>
+    <li><kbd>Ctrl</kbd> + <kbd>C</kbd> - Copy</li>
+    <li><kbd>Ctrl</kbd> + <kbd>V</kbd> - Paste</li>
+    <li><kbd>Ctrl</kbd> + <kbd>Z</kbd> - Undo</li>
+    <li><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> - Redo</li>
+  </ul>
+
+  <h2>Sample Output</h2>
+  <p>When you run the program, you should see:</p>
+  <p><samp>Server started on port 3000<br>Database connected successfully<br>Ready to accept connections</samp></p>
+
+  <p>Error output: <samp>Error: File not found at /path/to/file.txt</samp></p>
+
+  <h2>Variables</h2>
+  <p>In mathematics, the equation <var>E</var> = <var>mc</var><sup>2</sup> represents energy-mass equivalence.</p>
+
+  <p>The quadratic formula: <var>x</var> = (-<var>b</var> ± √(<var>b</var><sup>2</sup> - 4<var>ac</var>)) / (2<var>a</var>)</p>
+
+  <h2>Blockquotes</h2>
+  <blockquote>
+    <p>The Web is more a social creation than a technical one. I designed it for a social effect — to help people work together — and not as a technical toy.</p>
+    <cite>— Tim Berners-Lee</cite>
+  </blockquote>
+
+  <blockquote>
+    <p>Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p>
+    <cite>— Martin Fowler</cite>
+  </blockquote>
+
+  <blockquote>
+    <p>First, solve the problem. Then, write the code.</p>
+  </blockquote>
+
+  <h2>Long Quote with Code</h2>
+  <blockquote>
+    <p>When debugging, novices insert corrective code; experts remove defective code. The best way to debug is to write clean code in the first place:</p>
+    <pre><code>// Clean, simple code
+function add(a, b) {
+  return a + b;
+}</code></pre>
+    <cite>— Programming Wisdom</cite>
+  </blockquote>
+
+  <h2>Mixed Content</h2>
+  <p>According to the documentation, you should call <code>init()</code> before using <code>render()</code>. The output will display <samp>Initialization complete</samp> when successful.</p>
+
+  <p>To run the test suite, type <kbd>npm</kbd> <kbd>test</kbd> in your terminal. If all tests pass, you'll see <samp>All tests passed (42/42)</samp>.</p>
+</body>
+</html>
