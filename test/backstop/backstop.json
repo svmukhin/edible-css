@@ -1,0 +1,74 @@
+{
+  "id": "edible-css",
+  "viewports": [
+    {
+      "label": "mobile",
+      "width": 375,
+      "height": 667
+    },
+    {
+      "label": "tablet",
+      "width": 768,
+      "height": 1024
+    },
+    {
+      "label": "desktop",
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Typography Elements",
+      "url": "../../test/samples/typography.html"
+    },
+    {
+      "label": "Form Elements",
+      "url": "../../test/samples/forms.html"
+    },
+    {
+      "label": "Table Elements",
+      "url": "../../test/samples/tables.html"
+    },
+    {
+      "label": "List Elements",
+      "url": "../../test/samples/lists.html"
+    },
+    {
+      "label": "Semantic Elements",
+      "url": "../../test/samples/semantic.html"
+    },
+    {
+      "label": "Code Elements",
+      "url": "../../test/samples/code.html"
+    },
+    {
+      "label": "Media Elements",
+      "url": "../../test/samples/media.html"
+    },
+    {
+      "label": "Interactive Elements",
+      "url": "../../test/samples/interactive.html"
+    },
+    {
+      "label": "Kitchen Sink",
+      "url": "../../test/samples/kitchen-sink.html"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "test/backstop/reference",
+    "bitmaps_test": "test/backstop/test",
+    "engine_scripts": "test/backstop/engine_scripts",
+    "html_report": "test/backstop/html_report",
+    "ci_report": "test/backstop/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
