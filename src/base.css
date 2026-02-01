@@ -34,6 +34,6 @@ body {
 /* Horizontal rule styling */
 hr {
   border: none;
-  border-top: 1px solid var(--border-primary);
+  border-top: 1px solid var(--border);
   margin: var(--space-lg) 0;
 }

@@ -149,8 +149,8 @@ input[type="reset"] {
   font-weight: 600;
   line-height: 1.6;
   color: #ffffff;
-  background-color: var(--accent);
-  border: 1px solid var(--accent);
+  background-color: var(--button-bg);
+  border: 1px solid var(--button-bg);
   border-radius: 4px;
   cursor: pointer;
   text-align: center;
@@ -163,18 +163,8 @@ button:hover,
 input[type="submit"]:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover {
-  background-color: #0860ca;
-  border-color: #0860ca;
-}
-
-@media (prefers-color-scheme: dark) {
-  button:hover,
-  input[type="submit"]:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover {
-    background-color: #4493f8;
-    border-color: #4493f8;
-  }
+  background-color: var(--button-bg-hover);
+  border-color: var(--button-bg-hover);
 }
 
 button:focus,
