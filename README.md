@@ -10,17 +10,17 @@ A primitive, classless CSS framework for developers with no design skills. Style
 - **Responsive by Default** - Works on mobile, tablet, and desktop automatically
 - **Adaptive Dark Mode** - Automatic light/dark theme based on user preference
 - **Accessible** - WCAG 2.1 AA compliant with proper contrast and focus indicators
-- **Tiny** - Under 50KB uncompressed, ~10KB gzipped
+- **Tiny** - 24.8KB uncompressed, 3.8KB gzipped
 - **Modern Browsers** - Chrome, Firefox, Safari, Edge (last 2 versions)
 
 ## Installation
 
-### CDN (Easiest)
+### CDN (Recommended)
 
 Add this line to your HTML `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/edible-css@latest/dist/edible.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css">
 ```
 
 Or via unpkg:
@@ -35,11 +35,25 @@ Or via unpkg:
 npm install edible-css
 ```
 
-Then link to `node_modules/edible-css/dist/edible.css` or import in your build process.
+Then import in your CSS or JavaScript:
+
+```css
+@import 'edible-css/dist/edible.css';
+```
+
+Or link to `node_modules/edible-css/dist/edible.css` in your HTML.
 
 ### Download
 
-Download `edible.css` or `edible.min.css` from the [latest release](https://github.com/svmukhin/edible-css/releases) and include it in your project.
+Download the CSS file directly from GitHub:
+- [edible.css](https://github.com/svmukhin/edible-css/raw/main/dist/edible.css) (24.8KB uncompressed)
+- [edible.min.css](https://github.com/svmukhin/edible-css/raw/main/dist/edible.min.css) (16KB minified)
+
+Then include it in your project:
+
+```html
+<link rel="stylesheet" href="path/to/edible.min.css">
+```
 
 ## Usage
 
@@ -52,7 +66,7 @@ Download `edible.css` or `edible.min.css` from the [latest release](https://gith
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Page</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/edible-css@latest/dist/edible.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css">
 </head>
 <body>
   <header>
