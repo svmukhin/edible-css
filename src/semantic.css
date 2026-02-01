@@ -57,6 +57,16 @@ article:first-child {
   margin-top: 0;
 }
 
+/* Aside - Supplementary Content */
+aside {
+  margin: var(--space-lg) 0;
+  padding: var(--space-md);
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: var(--text-secondary);
+}
+
 /* Address */
 address {
   font-style: italic;
