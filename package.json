@@ -28,5 +28,10 @@
   "bugs": {
     "url": "https://github.com/svmukhin/edible-css/issues"
   },
-  "homepage": "https://github.com/svmukhin/edible-css#readme"
+  "homepage": "https://github.com/svmukhin/edible-css#readme",
+  "devDependencies": {
+    "postcss": "^8.4.35",
+    "postcss-cli": "^11.0.0",
+    "autoprefixer": "^10.4.17"
+  }
 }
