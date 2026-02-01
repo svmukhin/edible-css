@@ -93,3 +93,46 @@ textarea:read-only {
   cursor: not-allowed;
   opacity: 0.6;
 }
+
+/* Select Dropdowns */
+select {
+  display: block;
+  width: 100%;
+  padding: var(--space-sm);
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: var(--space-sm);
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(9, 105, 218, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  select:focus {
+    box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2);
+  }
+}
+
+select:disabled {
+  background-color: var(--bg-secondary);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+select[multiple] {
+  min-height: 8rem;
+}
+
+option {
+  padding: var(--space-xs);
+}
