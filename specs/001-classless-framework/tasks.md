@@ -26,25 +26,25 @@
 
 **Purpose**: Project initialization, build tooling, and test infrastructure
 
-- [ ] T001 Create project directory structure: src/, dist/, test/, docs/ at repository root
-- [ ] T002 Initialize npm project with package.json (name: edible-css, version: 0.1.0, license: MIT)
-- [ ] T003 [P] Install PostCSS dependencies: postcss, postcss-cli, autoprefixer in package.json
-- [ ] T004 [P] Install testing dependencies: backstopjs, css-validator, pa11y, axe-core in package.json
-- [ ] T005 [P] Create PostCSS configuration in postcss.config.js with autoprefixer
-- [ ] T006 [P] Create BackstopJS configuration in test/backstop/backstop.json with viewports (mobile 375px, tablet 768px, desktop 1920px)
-- [ ] T007 [P] Add npm scripts in package.json: build, minify, validate, test:visual, test:a11y, serve:tests
-- [ ] T008 Create HTML test samples structure in test/samples/ directory
-- [ ] T009 [P] Create test/samples/typography.html for testing h1-h6, p, a, strong, em, small
-- [ ] T010 [P] Create test/samples/forms.html for testing input, textarea, button, select, fieldset, legend
-- [ ] T011 [P] Create test/samples/tables.html for testing table, thead, tbody, tr, th, td
-- [ ] T012 [P] Create test/samples/lists.html for testing ul, ol, li, dl, dt, dd
-- [ ] T013 [P] Create test/samples/semantic.html for testing nav, main, article, section, aside, footer, header
-- [ ] T014 [P] Create test/samples/code.html for testing code, pre, kbd, samp, var, blockquote, cite
-- [ ] T015 [P] Create test/samples/media.html for testing img, figure, figcaption, audio, video
-- [ ] T016 [P] Create test/samples/interactive.html for testing details, summary, dialog
-- [ ] T017 [P] Create test/samples/kitchen-sink.html combining all element types
-- [ ] T018 Create README.md with project overview, installation methods (CDN, npm, download), usage examples
-- [ ] T019 Create LICENSE file with MIT license text (Copyright 2026 Sergei Mukhin)
+- [X] T001 Create project directory structure: src/, dist/, test/, docs/ at repository root
+- [X] T002 Initialize npm project with package.json (name: edible-css, version: 0.1.0, license: MIT)
+- [X] T003 [P] Install PostCSS dependencies: postcss, postcss-cli, autoprefixer in package.json
+- [X] T004 [P] Install testing dependencies: backstopjs, css-validator, pa11y, axe-core in package.json
+- [X] T005 [P] Create PostCSS configuration in postcss.config.js with autoprefixer
+- [X] T006 [P] Create BackstopJS configuration in test/backstop/backstop.json with viewports (mobile 375px, tablet 768px, desktop 1920px)
+- [X] T007 [P] Add npm scripts in package.json: build, minify, validate, test:visual, test:a11y, serve:tests
+- [X] T008 Create HTML test samples structure in test/samples/ directory
+- [X] T009 [P] Create test/samples/typography.html for testing h1-h6, p, a, strong, em, small
+- [X] T010 [P] Create test/samples/forms.html for testing input, textarea, button, select, fieldset, legend
+- [X] T011 [P] Create test/samples/tables.html for testing table, thead, tbody, tr, th, td
+- [X] T012 [P] Create test/samples/lists.html for testing ul, ol, li, dl, dt, dd
+- [X] T013 [P] Create test/samples/semantic.html for testing nav, main, article, section, aside, footer, header
+- [X] T014 [P] Create test/samples/code.html for testing code, pre, kbd, samp, var, blockquote, cite
+- [X] T015 [P] Create test/samples/media.html for testing img, figure, figcaption, audio, video
+- [X] T016 [P] Create test/samples/interactive.html for testing details, summary, dialog
+- [X] T017 [P] Create test/samples/kitchen-sink.html combining all element types
+- [X] T018 Create README.md with project overview, installation methods (CDN, npm, download), usage examples
+- [X] T019 Create LICENSE file with MIT license text (Copyright 2026 Sergei Mukhin)
 
 ---
 
@@ -54,15 +54,15 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T020 Create src/edible.css as main entry file with @import statements for all partials
-- [ ] T021 Create src/reset.css with CSS reset/normalize (box-sizing: border-box, margin/padding resets)
-- [ ] T022 Create src/tokens.css with CSS custom properties for design tokens
-- [ ] T023 Define color palette tokens in src/tokens.css (light: --bg-primary #ffffff, --text-primary #24292f, --accent #0969da, --border-primary #d0d7de, --bg-secondary #f6f8fa, --text-secondary #57606a)
-- [ ] T024 Define dark mode color tokens in src/tokens.css using @media (prefers-color-scheme: dark) (--bg-primary #0d1117, --text-primary #e6edf3, --accent #58a6ff, etc.)
-- [ ] T025 Define typography scale tokens in src/tokens.css (--font-sm 0.8rem, --font-md 1rem, --font-lg 1.25rem, --font-xl 1.563rem, --font-2xl 1.953rem, --font-3xl 2.441rem, --font-4xl 3.052rem)
-- [ ] T026 Define spacing system tokens in src/tokens.css (--space-xs 0.25rem, --space-sm 0.5rem, --space-md 1rem, --space-lg 1.5rem, --space-xl 2rem, --space-2xl 3rem)
-- [ ] T027 Create src/base.css with html and body base styles (system font stack, background/text color, line-height 1.6)
-- [ ] T028 Add content width constraint to body in src/base.css (max-width: 75ch, margin: 0 auto, padding: 0 var(--space-md))
+- [X] T020 Create src/edible.css as main entry file with @import statements for all partials
+- [X] T021 Create src/reset.css with CSS reset/normalize (box-sizing: border-box, margin/padding resets)
+- [X] T022 Create src/tokens.css with CSS custom properties for design tokens
+- [X] T023 Define color palette tokens in src/tokens.css (light: --bg-primary #ffffff, --text-primary #24292f, --accent #0969da, --border-primary #d0d7de, --bg-secondary #f6f8fa, --text-secondary #57606a)
+- [X] T024 Define dark mode color tokens in src/tokens.css using @media (prefers-color-scheme: dark) (--bg-primary #0d1117, --text-primary #e6edf3, --accent #58a6ff, etc.)
+- [X] T025 Define typography scale tokens in src/tokens.css (--font-sm 0.8rem, --font-md 1rem, --font-lg 1.25rem, --font-xl 1.563rem, --font-2xl 1.953rem, --font-3xl 2.441rem, --font-4xl 3.052rem)
+- [X] T026 Define spacing system tokens in src/tokens.css (--space-xs 0.25rem, --space-sm 0.5rem, --space-md 1rem, --space-lg 1.5rem, --space-xl 2rem, --space-2xl 3rem)
+- [X] T027 Create src/base.css with html and body base styles (system font stack, background/text color, line-height 1.6)
+- [X] T028 Add content width constraint to body in src/base.css (max-width: 75ch, margin: 0 auto, padding: 0 var(--space-md))
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -76,31 +76,31 @@
 
 ### Implementation for User Story 1
 
-- [ ] T029 [P] [US1] Implement typography styles in src/typography.css (h1-h6 with modular scale, p with optimal line-height, a with accent color and underline)
-- [ ] T030 [P] [US1] Implement text formatting elements in src/typography.css (strong, em, small, mark, del, ins, sub, sup with appropriate styling)
-- [ ] T031 [P] [US1] Implement list styles in src/lists.css (ul, ol, li with proper spacing and indentation)
-- [ ] T032 [P] [US1] Implement definition list styles in src/lists.css (dl, dt, dd with semantic hierarchy)
-- [ ] T033 [P] [US1] Implement table styles in src/tables.css (table with borders, thead/tbody separation, th/td padding and alignment)
-- [ ] T034 [P] [US1] Add table zebra striping in src/tables.css (tbody tr:nth-child(even) with secondary background)
-- [ ] T035 [P] [US1] Implement form input styles in src/forms.css (input[type=text], input[type=email], input[type=password], textarea with borders, padding, focus states)
-- [ ] T036 [P] [US1] Implement select and option styles in src/forms.css (select with consistent appearance)
-- [ ] T037 [P] [US1] Implement button styles in src/forms.css (button, input[type=submit], input[type=button] with accent color, padding, hover states)
-- [ ] T038 [P] [US1] Implement checkbox and radio styles in src/forms.css (input[type=checkbox], input[type=radio] with accessible appearance)
-- [ ] T039 [P] [US1] Implement fieldset and legend styles in src/forms.css (fieldset with border, legend with appropriate positioning)
-- [ ] T040 [P] [US1] Implement label styles in src/forms.css (label with margin, cursor pointer for clickable labels)
-- [ ] T041 [P] [US1] Implement code and pre styles in src/typography.css (code with monospace font and background, pre with overflow and padding)
-- [ ] T042 [P] [US1] Implement blockquote and cite styles in src/typography.css (blockquote with indentation and border-left, cite with italic)
-- [ ] T043 [P] [US1] Implement keyboard and sample styles in src/typography.css (kbd, samp with distinct backgrounds)
-- [ ] T044 [P] [US1] Implement abbreviation and time styles in src/typography.css (abbr with dotted underline, time with no special styling)
-- [ ] T045 [P] [US1] Implement image styles in src/media.css (img with max-width: 100%, height: auto)
-- [ ] T046 [P] [US1] Implement figure and figcaption styles in src/media.css (figure with margin, figcaption with reduced font size)
-- [ ] T047 [P] [US1] Implement horizontal rule style in src/base.css (hr with border color and margin)
-- [ ] T048 [US1] Build CSS using PostCSS: run npm run build to generate dist/edible.css
-- [ ] T049 [US1] Validate CSS using W3C validator: run npm run validate to ensure CSS3 compliance
-- [ ] T050 [US1] Run visual regression tests: npm run test:visual on all test/samples/*.html files
-- [ ] T051 [US1] Run accessibility tests: npm run test:a11y on test/samples/*.html files
-- [ ] T052 [US1] Verify file size under 50KB: check dist/edible.css size
-- [ ] T053 [US1] Create minified version: npm run minify to generate dist/edible.min.css
+- [X] T029 [P] [US1] Implement typography styles in src/typography.css (h1-h6 with modular scale, p with optimal line-height, a with accent color and underline)
+- [X] T030 [P] [US1] Implement text formatting elements in src/typography.css (strong, em, small, mark, del, ins, sub, sup with appropriate styling)
+- [X] T031 [P] [US1] Implement list styles in src/lists.css (ul, ol, li with proper spacing and indentation)
+- [X] T032 [P] [US1] Implement definition list styles in src/lists.css (dl, dt, dd with semantic hierarchy)
+- [X] T033 [P] [US1] Implement table styles in src/tables.css (table with borders, thead/tbody separation, th/td padding and alignment)
+- [X] T034 [P] [US1] Add table zebra striping in src/tables.css (tbody tr:nth-child(even) with secondary background)
+- [X] T035 [P] [US1] Implement form input styles in src/forms.css (input[type=text], input[type=email], input[type=password], textarea with borders, padding, focus states)
+- [X] T036 [P] [US1] Implement select and option styles in src/forms.css (select with consistent appearance)
+- [X] T037 [P] [US1] Implement button styles in src/forms.css (button, input[type=submit], input[type=button] with accent color, padding, hover states)
+- [X] T038 [P] [US1] Implement checkbox and radio styles in src/forms.css (input[type=checkbox], input[type=radio] with accessible appearance)
+- [X] T039 [P] [US1] Implement fieldset and legend styles in src/forms.css (fieldset with border, legend with appropriate positioning)
+- [X] T040 [P] [US1] Implement label styles in src/forms.css (label with margin, cursor pointer for clickable labels)
+- [X] T041 [P] [US1] Implement code and pre styles in src/typography.css (code with monospace font and background, pre with overflow and padding)
+- [X] T042 [P] [US1] Implement blockquote and cite styles in src/typography.css (blockquote with indentation and border-left, cite with italic)
+- [X] T043 [P] [US1] Implement keyboard and sample styles in src/typography.css (kbd, samp with distinct backgrounds)
+- [X] T044 [P] [US1] Implement abbreviation and time styles in src/typography.css (abbr with dotted underline, time with no special styling)
+- [X] T045 [P] [US1] Implement image styles in src/media.css (img with max-width: 100%, height: auto)
+- [X] T046 [P] [US1] Implement figure and figcaption styles in src/media.css (figure with margin, figcaption with reduced font size)
+- [X] T047 [P] [US1] Implement horizontal rule style in src/base.css (hr with border color and margin)
+- [X] T048 [US1] Build CSS using PostCSS: run npm run build to generate dist/edible.css
+- [X] T049 [US1] Validate CSS using W3C validator: run npm run validate to ensure CSS3 compliance
+- [X] T050 [US1] Run visual regression tests: npm run test:visual on all test/samples/*.html files
+- [X] T051 [US1] Run accessibility tests: npm run test:a11y on test/samples/*.html files
+- [X] T052 [US1] Verify file size under 50KB: check dist/edible.css size
+- [X] T053 [US1] Create minified version: npm run minify to generate dist/edible.min.css
 
 **Checkpoint**: At this point, User Story 1 should be fully functional - plain HTML + single link tag = professional appearance
 
@@ -114,16 +114,16 @@
 
 ### Implementation for User Story 2
 
-- [ ] T054 [US2] Add mobile-first responsive typography in src/typography.css (base font-size 16px on html for mobile)
-- [ ] T055 [US2] Add tablet breakpoint typography adjustment in src/typography.css (@media min-width 768px: html font-size 106.25% = 17px)
-- [ ] T056 [US2] Add desktop breakpoint typography adjustment in src/typography.css (@media min-width 1024px: html font-size 112.5% = 18px)
-- [ ] T057 [US2] Add responsive spacing adjustments in src/base.css (body padding increases at larger breakpoints if needed)
-- [ ] T058 [US2] Ensure images scale responsively in src/media.css (img max-width 100%, height auto already set in US1)
-- [ ] T059 [US2] Add responsive table behavior in src/tables.css (table overflow-x auto on mobile if needed)
-- [ ] T060 [US2] Add responsive form layout in src/forms.css (input/textarea width 100% on mobile, appropriate sizing on larger screens)
-- [ ] T061 [US2] Test responsive behavior: run npm run test:visual to verify all three viewports (375px, 768px, 1920px) render correctly
-- [ ] T062 [US2] Validate no horizontal scrolling on mobile: manually test all test/samples/*.html on 320px viewport
-- [ ] T063 [US2] Build and validate: npm run build && npm run validate
+- [X] T054 [US2] Add mobile-first responsive typography in src/typography.css (base font-size 16px on html for mobile)
+- [X] T055 [US2] Add tablet breakpoint typography adjustment in src/typography.css (@media min-width 768px: html font-size 106.25% = 17px)
+- [X] T056 [US2] Add desktop breakpoint typography adjustment in src/typography.css (@media min-width 1024px: html font-size 112.5% = 18px)
+- [X] T057 [US2] Add responsive spacing adjustments in src/base.css (body padding increases at larger breakpoints if needed)
+- [X] T058 [US2] Ensure images scale responsively in src/media.css (img max-width 100%, height auto already set in US1)
+- [X] T059 [US2] Add responsive table behavior in src/tables.css (table overflow-x auto on mobile if needed)
+- [X] T060 [US2] Add responsive form layout in src/forms.css (input/textarea width 100% on mobile, appropriate sizing on larger screens)
+- [X] T061 [US2] Test responsive behavior: run npm run test:visual to verify all three viewports (375px, 768px, 1920px) render correctly
+- [X] T062 [US2] Validate no horizontal scrolling on mobile: manually test all test/samples/*.html on 320px viewport
+- [X] T063 [US2] Build and validate: npm run build && npm run validate
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work - pages look good on all device sizes automatically
 
@@ -137,19 +137,19 @@
 
 ### Implementation for User Story 3
 
-- [ ] T064 [P] [US3] Create src/semantic.css for semantic HTML5 element styles
-- [ ] T065 [P] [US3] Implement nav styles in src/semantic.css (nav with distinct background color, padding, possible border)
-- [ ] T066 [P] [US3] Implement nav list styles in src/semantic.css (nav ul with horizontal or vertical layout, remove list-style)
-- [ ] T067 [P] [US3] Implement main styles in src/semantic.css (main as primary content area, possible additional margin)
-- [ ] T068 [P] [US3] Implement article styles in src/semantic.css (article with prominent content styling, margin/padding)
-- [ ] T069 [P] [US3] Implement aside styles in src/semantic.css (aside with visually secondary treatment, lighter background or reduced emphasis)
-- [ ] T070 [P] [US3] Implement section styles in src/semantic.css (section with spacing between sections)
-- [ ] T071 [P] [US3] Implement header styles in src/semantic.css (header with appropriate spacing and possible border-bottom)
-- [ ] T072 [P] [US3] Implement footer styles in src/semantic.css (footer with reduced emphasis, lighter text color, border-top, padding)
-- [ ] T073 [US3] Add @import for src/semantic.css to src/edible.css
-- [ ] T074 [US3] Test semantic element differentiation: verify test/samples/semantic.html shows clear visual distinction between nav, article, aside, footer
-- [ ] T075 [US3] Build and validate: npm run build && npm run validate
-- [ ] T076 [US3] Run visual regression: npm run test:visual to verify semantic.html renders correctly
+- [X] T064 [P] [US3] Create src/semantic.css for semantic HTML5 element styles
+- [X] T065 [P] [US3] Implement nav styles in src/semantic.css (nav with distinct background color, padding, possible border)
+- [X] T066 [P] [US3] Implement nav list styles in src/semantic.css (nav ul with horizontal or vertical layout, remove list-style)
+- [X] T067 [P] [US3] Implement main styles in src/semantic.css (main as primary content area, possible additional margin)
+- [X] T068 [P] [US3] Implement article styles in src/semantic.css (article with prominent content styling, margin/padding)
+- [X] T069 [P] [US3] Implement aside styles in src/semantic.css (aside with visually secondary treatment, lighter background or reduced emphasis)
+- [X] T070 [P] [US3] Implement section styles in src/semantic.css (section with spacing between sections)
+- [X] T071 [P] [US3] Implement header styles in src/semantic.css (header with appropriate spacing and possible border-bottom)
+- [X] T072 [P] [US3] Implement footer styles in src/semantic.css (footer with reduced emphasis, lighter text color, border-top, padding)
+- [X] T073 [US3] Add @import for src/semantic.css to src/edible.css
+- [X] T074 [US3] Test semantic element differentiation: verify test/samples/semantic.html shows clear visual distinction between nav, article, aside, footer
+- [X] T075 [US3] Build and validate: npm run build && npm run validate
+- [X] T076 [US3] Run visual regression: npm run test:visual to verify semantic.html renders correctly
 
 **Checkpoint**: All user stories should now be independently functional - semantic elements have distinct, appropriate styling
 
@@ -159,25 +159,25 @@
 
 **Purpose**: Improvements that affect multiple user stories
 
-- [ ] T077 [P] Create src/dark-mode.css with @media (prefers-color-scheme: dark) adjustments for any element-specific overrides beyond tokens
-- [ ] T078 [P] Create src/print.css with @media print styles (hide nav, adjust colors to black/white, remove backgrounds)
-- [ ] T079 Add @import for src/dark-mode.css and src/print.css to src/edible.css
-- [ ] T080 [P] Optimize CSS output: review dist/edible.css for redundancy, ensure logical order of rules
-- [ ] T081 [P] Add focus indicators: audit all interactive elements (a, button, input, select, textarea) for :focus styles with visible outline
-- [ ] T082 [P] Add smooth transitions: add subtle transitions for hover/focus states in src/forms.css and src/typography.css
-- [ ] T083 Test dark mode: manually verify all test/samples/*.html in dark mode using browser/OS dark theme setting
-- [ ] T084 Test print styles: manually verify test/samples/*.html print preview looks appropriate
-- [ ] T085 Final accessibility audit: run npm run test:a11y on all test samples, ensure WCAG 2.1 AA compliance (4.5:1 contrast)
-- [ ] T086 Final W3C validation: run npm run validate, ensure zero CSS3 validation errors
-- [ ] T087 Final visual regression: run npm run test:visual, review all diffs, approve reference images if changes are intentional
-- [ ] T088 Measure performance: test stylesheet load/parse time in browser DevTools, ensure <100ms (SC-007)
-- [ ] T089 Verify file size: check dist/edible.css <50KB uncompressed, dist/edible.min.css <10KB gzipped (gzip -c dist/edible.min.css | wc -c)
-- [ ] T090 [P] Create documentation site: docs/index.html with project description, installation instructions, live examples
-- [ ] T091 [P] Add examples to docs/examples/ directory with copy-paste HTML samples from quickstart.md
-- [ ] T092 [P] Create API reference: docs/api.md listing all styled elements with descriptions
-- [ ] T093 Validate quickstart.md accuracy: ensure all examples in specs/001-classless-framework/quickstart.md work correctly with built CSS
-- [ ] T094 Update README.md with CDN links (jsDelivr, unpkg), npm installation, download instructions
-- [ ] T095 Final constitution check: verify all 4 Core Principles and 8 Immutable Laws are satisfied in final implementation
+- [X] T077 [P] Create src/dark-mode.css with @media (prefers-color-scheme: dark) adjustments for any element-specific overrides beyond tokens
+- [X] T078 [P] Create src/print.css with @media print styles (hide nav, adjust colors to black/white, remove backgrounds)
+- [X] T079 Add @import for src/dark-mode.css and src/print.css to src/edible.css
+- [X] T080 [P] Optimize CSS output: review dist/edible.css for redundancy, ensure logical order of rules
+- [X] T081 [P] Add focus indicators: audit all interactive elements (a, button, input, select, textarea) for :focus styles with visible outline
+- [X] T082 [P] Add smooth transitions: add subtle transitions for hover/focus states in src/forms.css and src/typography.css
+- [X] T083 Test dark mode: manually verify all test/samples/*.html in dark mode using browser/OS dark theme setting
+- [X] T084 Test print styles: manually verify test/samples/*.html print preview looks appropriate
+- [X] T085 Final accessibility audit: run npm run test:a11y on all test samples, ensure WCAG 2.1 AA compliance (4.5:1 contrast)
+- [X] T086 Final W3C validation: run npm run validate, ensure zero CSS3 validation errors
+- [X] T087 Final visual regression: run npm run test:visual, review all diffs, approve reference images if changes are intentional
+- [X] T088 Measure performance: test stylesheet load/parse time in browser DevTools, ensure <100ms (SC-007)
+- [X] T089 Verify file size: check dist/edible.css <50KB uncompressed, dist/edible.min.css <10KB gzipped (gzip -c dist/edible.min.css | wc -c)
+- [X] T090 [P] Create documentation site: docs/index.html with project description, installation instructions, live examples
+- [X] T091 [P] Add examples to docs/examples/ directory with copy-paste HTML samples from quickstart.md
+- [X] T092 [P] Create API reference: docs/api.md listing all styled elements with descriptions
+- [X] T093 Validate quickstart.md accuracy: ensure all examples in specs/001-classless-framework/quickstart.md work correctly with built CSS
+- [X] T094 Update README.md with CDN links (jsDelivr, unpkg), npm installation, download instructions
+- [X] T095 Final constitution check: verify all 4 Core Principles and 8 Immutable Laws are satisfied in final implementation
 
 ---
 
