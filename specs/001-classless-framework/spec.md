@@ -78,12 +78,13 @@ A developer unfamiliar with semantic HTML tries to style their page. They discov
 - **FR-004**: Framework MUST provide responsive behavior across all common screen sizes (mobile 320px+, tablet 768px+, desktop 1024px+) using CSS media queries.
 - **FR-005**: Framework MUST maintain WCAG 2.1 AA accessibility standards (sufficient color contrast, focus indicators, semantic structure).
 - **FR-006**: Framework MUST use element-only selectors (e.g., `button`, `h1`, `nav`) with minimal specificity to allow easy user overrides.
-- **FR-007**: Framework MUST include a professional, opinionated design system (typography scale, color palette, spacing system) requiring no configuration.
+- **FR-007**: Framework MUST include a professional, opinionated design system (typography scale, color palette with automatic light/dark mode adaptation via `prefers-color-scheme`, spacing system) requiring no configuration.
 - **FR-008**: Framework MUST remain under 50KB uncompressed (per Constitution performance standards).
 - **FR-009**: Framework MUST validate as CSS3 compliant per W3C standards (Immutable Law #4).
 - **FR-010**: Framework MUST work in modern evergreen browsers (Chrome, Firefox, Safari, Edge last 2 versions).
 - **FR-011**: Framework MUST provide print-friendly styles via @media print queries.
 - **FR-012**: Framework MUST handle common HTML patterns (navigation lists, data tables, form layouts) without additional markup.
+- **FR-013**: Framework MUST constrain content width (approximately 75 characters maximum line length) on wide screens to maintain optimal readability, while allowing full width on narrow screens.
 
 ### Key Entities
 
@@ -92,9 +93,10 @@ Since this is a styling framework with no data persistence or application logic,
 - **HTML5 Semantic Elements**: The complete set of standard HTML5 elements that receive styling. Each element has default browser styles that will be overridden with opinionated, professional alternatives.
 - **Viewport Breakpoints**: Logical breakpoints for responsive behavior (mobile, tablet, desktop). These define when layout and typography adjustments occur.
 - **Design Tokens**: The framework's internal design system including:
-  - Typography scale (font sizes, line heights, font families)
-  - Color palette (text, backgrounds, accents, borders)
+  - Typography scale (font sizes, line heights, font families - using modern system UI font stack: `system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif`)
+  - Color palette (light theme default with automatic dark mode via `@media (prefers-color-scheme: dark)` - adaptive to user's system preferences)
   - Spacing system (margins, padding, gaps)
+  - Layout constraints (max-width ~75ch for main content areas to ensure optimal line length and readability on wide screens)
   - Component patterns (how forms, tables, navigation are structured)
 
 Note: These "entities" are purely conceptual and exist only as CSS rules, not as data structures or code objects.
@@ -123,7 +125,15 @@ Note: These "entities" are purely conceptual and exist only as CSS rules, not as
 - **Assumption 5**: The primary use case is documentation sites, personal projects, and internal tools - not marketing sites or web applications with complex interactive components.
 - **Assumption 6**: Users are willing to accept opinionated design choices in exchange for simplicity (no configuration options).
 - **Assumption 7**: English language content is the primary target (left-to-right reading direction, Latin character sets).
-- **Assumption 8**: Standard web fonts or system font stacks are acceptable; custom font loading is not required.
+- **Assumption 8**: Modern system UI fonts (`system-ui, -apple-system, 'Segoe UI', Roboto, etc.) are used for optimal native performance and appearance; custom web font loading is not required.
+
+## Clarifications
+
+### Session 2026-02-01
+
+- Q: Typography foundation: Which system font stack approach should EdibleCSS use? → A: Modern system UI fonts (`system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif`)
+- Q: Color palette approach: Should EdibleCSS use a light-only, dark-only, or adaptive light/dark color scheme? → A: Adaptive (light default + automatic dark mode via `prefers-color-scheme`)
+- Q: Maximum content width: Should EdibleCSS constrain content width on wide screens for optimal readability? → A: Constrained (max-width ~75ch on main content)
 
 ### Out of Scope
 
