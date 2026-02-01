@@ -1,5 +1,13 @@
 /* Semantic HTML5 Elements */
 
+/* Navigation */
+nav {
+  background-color: var(--bg-secondary);
+  padding: var(--space-md);
+  margin: var(--space-md) 0;
+  border-radius: 4px;
+}
+
 /* Address */
 address {
   font-style: italic;
