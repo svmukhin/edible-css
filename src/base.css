@@ -1,0 +1,36 @@
+/* Base Styles */
+
+html {
+  /* Base font size for mobile - will be adjusted at larger breakpoints */
+  font-size: 100%; /* 16px */
+  
+  /* Enable smooth scrolling */
+  scroll-behavior: smooth;
+  
+  /* Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  /* System UI font stack - no custom fonts needed */
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  
+  /* Colors using design tokens */
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  
+  /* Typography */
+  font-size: var(--font-md);
+  line-height: 1.6;
+  
+  /* Content width constraint will be added in T028 */
+}
+
+/* Horizontal rule styling */
+hr {
+  border: none;
+  border-top: 1px solid var(--border-primary);
+  margin: var(--space-lg) 0;
+}
