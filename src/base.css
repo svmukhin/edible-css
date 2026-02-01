@@ -25,7 +25,10 @@ body {
   font-size: var(--font-md);
   line-height: 1.6;
   
-  /* Content width constraint will be added in T028 */
+  /* Content width constraint for optimal readability */
+  max-width: 75ch;
+  margin: 0 auto;
+  padding: 0 var(--space-md);
 }
 
 /* Horizontal rule styling */
