@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>List Elements Test - EdibleCSS</title>
+  <link rel="stylesheet" href="../../dist/edible.css">
+</head>
+<body>
+  <h1>List Elements</h1>
+
+  <h2>Unordered List</h2>
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item with a longer description to test how text wraps within list items when the content extends beyond a single line</li>
+    <li>Fourth item</li>
+  </ul>
+
+  <h2>Ordered List</h2>
+  <ol>
+    <li>Step one</li>
+    <li>Step two</li>
+    <li>Step three with detailed instructions that span multiple lines to ensure proper styling and indentation is maintained</li>
+    <li>Step four</li>
+  </ol>
+
+  <h2>Nested Lists</h2>
+  <ul>
+    <li>Top level item 1</li>
+    <li>Top level item 2
+      <ul>
+        <li>Nested item 2.1</li>
+        <li>Nested item 2.2
+          <ul>
+            <li>Deeply nested item 2.2.1</li>
+            <li>Deeply nested item 2.2.2</li>
+          </ul>
+        </li>
+        <li>Nested item 2.3</li>
+      </ul>
+    </li>
+    <li>Top level item 3</li>
+  </ul>
+
+  <h2>Mixed Nested Lists</h2>
+  <ol>
+    <li>First ordered item</li>
+    <li>Second ordered item
+      <ul>
+        <li>Unordered nested item</li>
+        <li>Another unordered item
+          <ol>
+            <li>Ordered item within unordered within ordered</li>
+            <li>Second ordered nested item</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+    <li>Third ordered item</li>
+  </ol>
+
+  <h2>Definition List</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language - the standard markup language for documents designed to be displayed in a web browser.</dd>
+
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets - a style sheet language used for describing the presentation of a document written in HTML.</dd>
+
+    <dt>JavaScript</dt>
+    <dd>A programming language that conforms to the ECMAScript specification.</dd>
+    <dd>Commonly used to create interactive effects within web browsers.</dd>
+
+    <dt>API</dt>
+    <dt>Application Programming Interface</dt>
+    <dd>A set of functions and procedures allowing the creation of applications that access the features or data of an operating system, application, or other service.</dd>
+  </dl>
+
+  <h2>List with Inline Content</h2>
+  <ul>
+    <li>Item with <strong>strong text</strong></li>
+    <li>Item with <em>emphasized text</em></li>
+    <li>Item with <a href="#">a link</a></li>
+    <li>Item with <code>inline code</code></li>
+  </ul>
+
+  <h2>List in Paragraph Context</h2>
+  <p>Here's a paragraph followed by a list:</p>
+  <ul>
+    <li>List item one</li>
+    <li>List item two</li>
+    <li>List item three</li>
+  </ul>
+  <p>And here's another paragraph after the list.</p>
+</body>
+</html>
