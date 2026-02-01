@@ -1,16 +1,24 @@
 /* Print Styles */
 @media print {
+  /* Reset page layout for print */
   body {
     max-width: 100%;
     padding: 0;
+    margin: 0;
+    font-size: 12pt;
+    line-height: 1.5;
   }
 
+  /* Show URLs for links */
   a[href]::after {
     content: " (" attr(href) ")";
+    font-size: 90%;
   }
 
+  /* Show abbreviation titles */
   abbr[title]::after {
     content: " (" attr(title) ")";
+    font-size: 90%;
   }
 
   /* Don't show links for fragment identifiers or javascript protocol */
@@ -22,18 +30,30 @@
   /* Page breaks */
   h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid;
-  }
-
-  blockquote, pre, table, figure {
     page-break-inside: avoid;
   }
 
-  /* Remove backgrounds for print */
+  blockquote, pre, table, figure, ul, ol {
+    page-break-inside: avoid;
+  }
+
+  /* Keep content together */
+  p, li {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* Remove backgrounds and convert to black/white for print */
   * {
     background: transparent !important;
     color: #000 !important;
     box-shadow: none !important;
     text-shadow: none !important;
+  }
+
+  /* Keep borders visible but simplified */
+  table, th, td {
+    border: 1px solid #000 !important;
   }
 
   /* Keep link colors visible */
@@ -43,13 +63,44 @@
     color: #000 !important;
   }
 
-  /* Hide interactive elements */
+  /* Enhance headings for print */
+  h1 {
+    font-size: 24pt;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+  }
+
+  /* Hide interactive and media elements */
   button,
   input[type="submit"],
   input[type="button"],
+  input[type="reset"],
   video,
   audio,
-  nav {
+  nav,
+  aside,
+  form {
     display: none;
+  }
+
+  /* Show hidden content that might be useful in print */
+  details {
+    display: block;
+  }
+
+  summary {
+    font-weight: bold;
+  }
+
+  /* Optimize images for print */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid;
   }
 }
