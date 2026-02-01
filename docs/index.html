@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EdibleCSS - A primitive, classless CSS framework for developers with no design skills. Just add HTML.">
+  <title>EdibleCSS - A Classless CSS Framework</title>
+  <link rel="stylesheet" href="../dist/edible.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#examples">Examples</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="https://github.com/svmukhin/edible-css">GitHub</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>EdibleCSS</h1>
+      <p>A primitive, classless CSS framework for developers with no design skills.</p>
+      <p><strong>Just add HTML.</strong></p>
+      <p>
+        <a href="https://github.com/svmukhin/edible-css/archive/refs/heads/main.zip">Download v0.1.0</a> · 
+        <a href="https://github.com/svmukhin/edible-css">View on GitHub</a>
+      </p>
+    </section>
+
+    <article id="about">
+      <h2>About EdibleCSS</h2>
+      <p>
+        EdibleCSS is a <strong>classless CSS framework</strong> that styles semantic HTML5 elements automatically. 
+        No classes, no JavaScript, no build step required. Just write clean HTML and get professional styling instantly.
+      </p>
+      <p>
+        Perfect for developers who want to focus on content and functionality without worrying about design. 
+        Ideal for prototypes, documentation, internal tools, and personal projects.
+      </p>
+
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>🎨 Zero Classes:</strong> Write semantic HTML5. EdibleCSS styles everything automatically.</li>
+        <li><strong>📦 Tiny Size:</strong> Only 3.7 KB gzipped. Loads and parses in milliseconds.</li>
+        <li><strong>🌙 Dark Mode:</strong> Automatic dark mode support via prefers-color-scheme.</li>
+        <li><strong>📱 Responsive:</strong> Mobile-first design with responsive typography and spacing.</li>
+        <li><strong>♿ Accessible:</strong> WCAG 2.1 AA compliant with proper contrast and focus states.</li>
+        <li><strong>🖨️ Print Ready:</strong> Optimized print styles for clean, readable documents.</li>
+      </ul>
+    </article>
+
+    <article id="installation">
+      <h2>Installation</h2>
+      <p>Choose your preferred installation method:</p>
+
+      <div class="installation-options">
+        <section>
+          <h3>CDN (Recommended)</h3>
+          <p>The fastest way to get started. Add one line to your HTML:</p>
+          <div class="code-block">
+            <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css"&gt;</code></pre>
+          </div>
+          <p>Or use unpkg:</p>
+          <div class="code-block">
+            <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/edible-css@latest/dist/edible.min.css"&gt;</code></pre>
+          </div>
+        </section>
+
+        <section>
+          <h3>NPM</h3>
+          <p>Install via npm for use in build processes:</p>
+          <div class="code-block">
+       h3>CDN (Recommended)</h3>
+      <p>The fastest way to get started. Add one line to your HTML:</p>
+      <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css"&gt;</code></pre>
+      <p>Or use unpkg:</p>
+      <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/edible-css@latest/dist/edible.min.css"&gt;</code></pre>
+
+      <h3>NPM</h3>
+      <p>Install via npm for use in build processes:</p>
+      <pre><code>npm install edible-css</code></pre>
+      <p>Then import in your CSS or JavaScript:</p>
+      <pre><code>@import 'edible-css/dist/edible.css';</code></pre>
+
+      <h3>Download</h3>
+      <p>Download the CSS file directly and host it yourself:</p>
+      <ul>
+        <li><a href="https://github.com/svmukhin/edible-css/raw/main/dist/edible.css">edible.css</a> (24 KB uncompressed)</li>
+        <li><a href="https://github.com/svmukhin/edible-css/raw/main/dist/edible.min.css">edible.min.css</a> (16 KB minified)</li>
+      </ul <p>This is a blockquote. It's great for emphasizing important quotes or notes.</p>
+          </blockquote>
+        </div>
+      </section>
+
+      <section>
+        <h3>Form Example</h3>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Enter your name">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="you@example.com">
+
+          <label for="message">Message:</label>
+          <textarea id="message" placeholder="Your message here..."></textarea>
+
+          <label>
+            <input type="checkbox">
+            Subscribe to newsletter
+          </label>
+
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+
+      <section>
+        <h3>Table Example</h3>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">EdibleCSS</th>
+              <th scope="col">Traditional</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Classes Required</td>
+              <td>0</td>
+              <td>100+</td>
+            </tr>
+            <tr>
+              <td>File Size (gzipped)</td>
+              <td>3.7 KB</td>
+              <td>20-50 KB</td>
+            </tr>
+            <tr>
+              <td>Learning Curve</td>
+              <td>None</td>
+              <td>Hours to Days</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h3>List Example</h3>
+        <div>
+          <h4>Unordered List</h4>
+          <ul>
+            <li>First item</li>
+            <li>Second item with nested list:
+              <ul>
+                <li>Nested item 1</li>
+                <li>Nested item 2</li>
+              </ul>
+            </li>
+            <li>Third item</li>
+          </ul>
+
+          <h4>Ordered List</h4>
+          <ol>
+            <li>First step</li>
+            <li>Second step</li>
+            <li>Third step</li>
+          </ol>
+        </div>
+      </section>
+    </article>
+
+    <article id="features">
+      <h2>Features & Specifications</h2>
+      
+      <h3>Styled Elements</h3>
+      <p>EdibleCSS provides beautiful default styles for 50+ HTML5 elements:</p>
+      <ul>
+        <li><strong>Typography:</strong> h1-h6, p, a, strong, em, small, mark, del, ins, sub, sup</li>
+        <li><strong>Code:</strong> code, pre, kbd, samp, var, blockquote, cite</li>
+        <li><strong>Lists:</strong> ul, ol, li, dl, dt, dd (with nested support)</li>
+        <li><strong>Tables:</strong> table, thead, tbody, tr, th, td (with responsive overflow)</li>
+        <li><strong>Forms:</strong> input (all types), textarea, select, button, fieldset, legend, label</li>
+        <li><strong>Media:</strong> img, video, audio, iframe, svg, picture, canvas</li>
+        <li><strong>Semantic:</strong> nav, main, article, aside, section, header, footer, address, figure</li>
+        <li><strong>Interactive:</strong> details, summary, dialog, progress, meter</li>
+      </ul>
+
+      <h3>Design System</h3>
+      <ul>
+        <li><strong>Colors:</strong> GitHub-inspired palette with light/dark modes</li>
+        <li><strong>Typography:</strong> 1.25 modular scale (16px → 18px responsive)</li>
+        <li><strong>Spacing:</strong> Consistent 8px grid system</li>
+        <li><strong>Fonts:</strong> System font stack for optimal performance</li>
+      </ul>
+
+      <h3>Browser Support</h3>
+      <p>Supports all modern browsers:</p>
+      <ul>
+        <li>Chrome/Edge (last 2 versions)</li>
+        <li>Firefox (last 2 versions)</li>
+        <li>Safari (last 2 versions)</li>
+      </ul>
+
+      <h3>Performance</h3>
+      <ul>
+        <li>Load + parse time: &lt;100ms on modern connections</li>
+        <li>Zero JavaScript overhead</li>
+        <li>No runtime computation</li>
+      </ul>
+    </article>
+
+    <article id="philosophy">
+      <h2>Philosophy</h2>
+      <blockquote>
+        <p><strong>Just add HTML.</strong></p>
+        <p>
+          EdibleCSS is built on the principle that semantic HTML should look good by default. 
+          No classes, no complexity, no learning curve. Write clean, accessible markup and 
+          EdibleCSS handles the rest.
+        </p>
+      </blockquote>
+      
+      <h3>Perfect For:</h3>
+      <ul>
+        <li>📝 Documentation sites</li>
+        <li>🛠️ Internal tools and dashboards</li>
+        <li>🚀 Rapid prototyping</li>
+        <li>📚 Personal blogs and notes</li>
+        <li>🧪 Demo pages and experiments</li>
+        <li>📧 HTML emails (with limitations)</li>
+      </ul>
+
+      <h3>Not For:</h3>
+      <ul>
+        <li>Complex component-based UIs (use a component framework)</li>
+        <li>Highly custom designs (use custom CSS)</li>
+        <li>Marketing landing pages (too opinionated)</li>
+      </ul>
+    </article>
+
+    <article>
+      <h2>Quick Start</h2>
+      <p>Get started in 3 simple steps:</p>
+      <ol>
+        <li>Add the CDN link to your HTML <code>&lt;head&gt;</code></li>
+        <li>Write semantic HTML5 markup</li>
+        <li>That's it! Your page is styled.</li>
+      </ol>
+      
+      <details>
+        <summary>See a complete example</summary>
+        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;My Page&lt;/title&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&gt;&lt;a href="#home"&gt;Home&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;
+
+  &lt;main&gt;
+    &lt;article&gt;
+      &lt;h1&gt;Welcome to My Site&lt;/h1&gt;
+      &lt;p&gt;This is a paragraph. No classes needed!&lt;/p&gt;
+    &lt;/article&gt;
+  &lt;/main&gt;
+
+  &lt;footer&gt;
+    &lt;p&gt;&copy; 2026 Your Name&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </details>
+    </article>
+  </main>
+
+  <footer>
+    <hr>
+    <p>
+      <small>
+        EdibleCSS v0.1.0 · 
+        <a href="https://github.com/svmukhin/edible-css">GitHub</a> · 
+        <a href="https://github.com/svmukhin/edible-css/blob/main/LICENSE.txt">MIT License</a> · 
+        Made with ❤️ for developers with no design skills
+      </small>
+    </p>
+  </footer>
+</body>
+</html>
