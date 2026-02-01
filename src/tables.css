@@ -16,6 +16,15 @@ tbody tr {
   border-bottom: 1px solid var(--border);
 }
 
+/* Zebra striping */
+tbody tr:nth-child(even) {
+  background-color: var(--bg-secondary);
+}
+
+tbody tr:hover {
+  background-color: var(--bg-tertiary);
+}
+
 th,
 td {
   text-align: left;
