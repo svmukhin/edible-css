@@ -1,0 +1,120 @@
+# Speckit: Agent-Generated Context Files
+# These are temporary files generated during agent runs and should be regenerated
+.specify/memory/agent-context.md
+.specify/memory/context-*.md
+.specify/memory/*-context.md
+
+# Speckit: Temporary Working Files
+.specify/tmp/
+.specify/temp/
+*.tmp
+*.temp
+
+# Keep these speckit files:
+# - .specify/memory/constitution.md (REQUIRED - project constitution)
+# - .specify/templates/ (REQUIRED - all templates)
+# - .specify/scripts/ (REQUIRED - automation scripts)
+# - specs/**/spec.md (REQUIRED - feature specifications)
+# - specs/**/plan.md (generated but committed)
+# - specs/**/research.md (generated but committed)
+# - specs/**/data-model.md (generated but committed)
+# - specs/**/tasks.md (generated but committed)
+# - specs/**/checklists/ (generated but committed)
+
+# OS-specific Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Editor & IDE Files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# Node.js (if project uses npm/yarn)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# Build Artifacts & Distribution
+dist/
+build/
+out/
+target/
+*.min.css
+*.min.js
+*.map
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+lerna-debug.log*
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+*.key
+*.pem
+secrets/
+credentials/
+
+# Testing
+coverage/
+.nyc_output/
+.pytest_cache/
+__pycache__/
+*.py[cod]
+*$py.class
+.tox/
+.coverage
+htmlcov/
+
+# Python
+*.py[cod]
+__pycache__/
+*.so
+.Python
+venv/
+ENV/
+env/
+.venv/
+
+# Backup Files
+*.bak
+*.backup
+*~
+*.orig
+
+# Documentation Build Artifacts
+docs/_build/
+site/
+_site/
+
+# Keep Documentation Source
+# - README.md (REQUIRED)
+# - docs/ (if source documentation exists)
