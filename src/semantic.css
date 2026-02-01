@@ -67,6 +67,15 @@ aside {
   color: var(--text-secondary);
 }
 
+/* Section */
+section {
+  margin: var(--space-xl) 0;
+}
+
+section:first-child {
+  margin-top: 0;
+}
+
 /* Address */
 address {
   font-style: italic;
