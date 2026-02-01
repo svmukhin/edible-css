@@ -32,6 +32,10 @@
   "devDependencies": {
     "postcss": "^8.4.35",
     "postcss-cli": "^11.0.0",
-    "autoprefixer": "^10.4.17"
+    "autoprefixer": "^10.4.17",
+    "backstopjs": "^6.3.23",
+    "css-validator": "^2.1.1",
+    "pa11y": "^8.0.0",
+    "axe-core": "^4.8.4"
   }
 }
