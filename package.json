@@ -1,0 +1,32 @@
+{
+  "name": "edible-css",
+  "version": "0.1.0",
+  "description": "A primitive, classless CSS framework for developers with no design skills. Style semantic HTML5 with a single <link> tag.",
+  "main": "dist/edible.css",
+  "style": "dist/edible.css",
+  "files": [
+    "dist/edible.css",
+    "dist/edible.min.css"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test command specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/svmukhin/edible-css"
+  },
+  "keywords": [
+    "css",
+    "classless",
+    "framework",
+    "semantic-html",
+    "no-classes",
+    "drop-in"
+  ],
+  "author": "Sergei Mukhin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svmukhin/edible-css/issues"
+  },
+  "homepage": "https://github.com/svmukhin/edible-css#readme"
+}
