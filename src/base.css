@@ -20,6 +20,13 @@ html {
   }
 }
 
+/* Desktop breakpoint - larger base font for comfortable reading */
+@media (min-width: 1024px) {
+  html {
+    font-size: 112.5%; /* 18px */
+  }
+}
+
 body {
   /* System UI font stack - no custom fonts needed */
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
