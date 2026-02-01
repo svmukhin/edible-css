@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kitchen Sink Test - EdibleCSS</title>
+  <link rel="stylesheet" href="../../dist/edible.css">
+</head>
+<body>
+  <header>
+    <h1>EdibleCSS Kitchen Sink</h1>
+    <p>Comprehensive test of all HTML5 elements styled by EdibleCSS</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#typography">Typography</a></li>
+      <li><a href="#forms">Forms</a></li>
+      <li><a href="#tables">Tables</a></li>
+      <li><a href="#lists">Lists</a></li>
+      <li><a href="#media">Media</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <article id="typography">
+      <h2>Typography</h2>
+      
+      <h3>Headings</h3>
+      <h1>Heading 1</h1>
+      <h2>Heading 2</h2>
+      <h3>Heading 3</h3>
+      <h4>Heading 4</h4>
+      <h5>Heading 5</h5>
+      <h6>Heading 6</h6>
+
+      <h3>Paragraphs and Text</h3>
+      <p>This is a paragraph with <a href="#">a link</a>, <strong>strong text</strong>, <em>emphasized text</em>, <small>small text</small>, <mark>marked text</mark>, <del>deleted text</del>, <ins>inserted text</ins>, <sub>subscript</sub>, and <sup>superscript</sup>.</p>
+
+      <blockquote>
+        <p>This is a blockquote demonstrating how quoted content appears.</p>
+        <cite>— Source Author</cite>
+      </blockquote>
+
+      <h3>Code</h3>
+      <p>Inline code: <code>const x = 42;</code></p>
+      <pre><code>function example() {
+  return 'Code block';
+}</code></pre>
+
+      <p>Keyboard: <kbd>Ctrl</kbd> + <kbd>S</kbd>, Sample: <samp>Output text</samp>, Variable: <var>x</var></p>
+      
+      <hr>
+    </article>
+
+    <article id="forms">
+      <h2>Forms</h2>
+      
+      <form>
+        <fieldset>
+          <legend>User Information</legend>
+          
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="John Doe">
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com">
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" placeholder="Your message"></textarea>
+
+          <label for="country">Country:</label>
+          <select id="country" name="country">
+            <option value="">Select a country</option>
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+          </select>
+
+          <label>
+            <input type="checkbox" name="subscribe" checked>
+            Subscribe to newsletter
+          </label>
+
+          <label>
+            <input type="radio" name="plan" value="free" checked>
+            Free Plan
+          </label>
+          <label>
+            <input type="radio" name="plan" value="pro">
+            Pro Plan
+          </label>
+
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </fieldset>
+      </form>
+    </article>
+
+    <article id="tables">
+      <h2>Tables</h2>
+      
+      <table>
+        <caption>Sample Data Table</caption>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Alice</td>
+            <td>28</td>
+            <td>New York</td>
+          </tr>
+          <tr>
+            <td>Bob</td>
+            <td>34</td>
+            <td>London</td>
+          </tr>
+          <tr>
+            <td>Carol</td>
+            <td>26</td>
+            <td>Tokyo</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <article id="lists">
+      <h2>Lists</h2>
+      
+      <h3>Unordered List</h3>
+      <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item with nested list:
+          <ul>
+            <li>Nested item 1</li>
+            <li>Nested item 2</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3>Ordered List</h3>
+      <ol>
+        <li>Step one</li>
+        <li>Step two</li>
+        <li>Step three</li>
+      </ol>
+
+      <h3>Definition List</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+      </dl>
+    </article>
+
+    <article id="media">
+      <h2>Media</h2>
+      
+      <h3>Images</h3>
+      <img src="https://via.placeholder.com/600x300/0969da/ffffff?text=Sample+Image" alt="Sample image">
+
+      <figure>
+        <img src="https://via.placeholder.com/400x300/58a6ff/ffffff?text=Figure" alt="Figure image">
+        <figcaption>Figure caption explaining the image</figcaption>
+      </figure>
+
+      <h3>Interactive Elements</h3>
+      <details>
+        <summary>Click to expand details</summary>
+        <p>This is hidden content that appears when the details element is opened.</p>
+      </details>
+    </article>
+
+    <section>
+      <h2>Semantic Sections</h2>
+      <p>This section demonstrates semantic HTML5 sectioning elements working together.</p>
+    </section>
+  </main>
+
+  <aside>
+    <h2>Sidebar</h2>
+    <p>This is aside content, tangentially related to the main content.</p>
+    <nav>
+      <h3>Related Links</h3>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <footer>
+    <h2>Footer</h2>
+    <p>&copy; 2026 EdibleCSS. MIT Licensed.</p>
+    <address>
+      Contact: <a href="mailto:hello@example.com">hello@example.com</a>
+    </address>
+  </footer>
+</body>
+</html>
