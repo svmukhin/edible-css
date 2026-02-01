@@ -1,0 +1,80 @@
+/* Utility Classes (Optional) */
+
+/* Text Alignment */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* Display Utilities */
+.hidden {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+/* Spacing Utilities */
+.mt-0 { margin-top: 0; }
+.mb-0 { margin-bottom: 0; }
+.ml-0 { margin-left: 0; }
+.mr-0 { margin-right: 0; }
+
+.mt-sm { margin-top: var(--space-sm); }
+.mb-sm { margin-bottom: var(--space-sm); }
+.mt-md { margin-top: var(--space-md); }
+.mb-md { margin-bottom: var(--space-md); }
+.mt-lg { margin-top: var(--space-lg); }
+.mb-lg { margin-bottom: var(--space-lg); }
+
+/* Width Utilities */
+.full-width {
+  width: 100%;
+}
+
+.max-width-sm {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-width-md {
+  max-width: 60rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-width-lg {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Screen Reader Only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
