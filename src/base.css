@@ -13,6 +13,13 @@ html {
   text-rendering: optimizeLegibility;
 }
 
+/* Tablet breakpoint - slightly larger base font */
+@media (min-width: 768px) {
+  html {
+    font-size: 106.25%; /* 17px */
+  }
+}
+
 body {
   /* System UI font stack - no custom fonts needed */
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
