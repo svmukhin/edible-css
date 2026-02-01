@@ -1,0 +1,47 @@
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: var(--space-md) 0;
+  border-radius: 4px;
+}
+
+/* Responsive Media */
+video,
+audio,
+iframe,
+embed,
+object {
+  max-width: 100%;
+  display: block;
+  margin: var(--space-md) 0;
+}
+
+video {
+  border-radius: 4px;
+}
+
+/* SVG */
+svg {
+  max-width: 100%;
+  height: auto;
+  fill: currentColor;
+}
+
+/* Picture Element */
+picture {
+  display: block;
+  margin: var(--space-md) 0;
+}
+
+picture img {
+  margin: 0;
+}
+
+/* Canvas */
+canvas {
+  display: block;
+  max-width: 100%;
+  margin: var(--space-md) 0;
+}
