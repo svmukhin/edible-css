@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Elements Test - EdibleCSS</title>
+  <link rel="stylesheet" href="../../dist/edible.css">
+</head>
+<body>
+  <h1>Table Elements</h1>
+
+  <h2>Basic Table</h2>
+  <table>
+    <caption>User Data</caption>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Alice Smith</td>
+        <td>alice@example.com</td>
+        <td>Admin</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Bob Johnson</td>
+        <td>bob@example.com</td>
+        <td>User</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Carol Williams</td>
+        <td>carol@example.com</td>
+        <td>Editor</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>David Brown</td>
+        <td>david@example.com</td>
+        <td>User</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Eve Davis</td>
+        <td>eve@example.com</td>
+        <td>Admin</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Table with tfoot</h2>
+  <table>
+    <caption>Sales Report</caption>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Q1</th>
+        <th>Q2</th>
+        <th>Q3</th>
+        <th>Q4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Widget A</td>
+        <td>$10,000</td>
+        <td>$12,000</td>
+        <td>$11,500</td>
+        <td>$13,000</td>
+      </tr>
+      <tr>
+        <td>Widget B</td>
+        <td>$8,000</td>
+        <td>$9,500</td>
+        <td>$10,200</td>
+        <td>$11,000</td>
+      </tr>
+      <tr>
+        <td>Widget C</td>
+        <td>$15,000</td>
+        <td>$14,500</td>
+        <td>$16,000</td>
+        <td>$17,500</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Total</th>
+        <td>$33,000</td>
+        <td>$36,000</td>
+        <td>$37,700</td>
+        <td>$41,500</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <h2>Complex Table with Colspan and Rowspan</h2>
+  <table>
+    <caption>Schedule</caption>
+    <colgroup>
+      <col>
+      <col span="2" style="background-color: var(--bg-secondary, #f6f8fa);">
+      <col span="2">
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>9:00 AM</th>
+        <td>Meeting</td>
+        <td rowspan="2">Workshop</td>
+        <td>Development</td>
+        <td>Review</td>
+      </tr>
+      <tr>
+        <th>10:00 AM</th>
+        <td>Development</td>
+        <td>Testing</td>
+        <td>Meeting</td>
+      </tr>
+      <tr>
+        <th>11:00 AM</th>
+        <td colspan="2">Team Standup</td>
+        <td>Development</td>
+        <td>Development</td>
+      </tr>
+      <tr>
+        <th>12:00 PM</th>
+        <td colspan="4">Lunch Break</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Minimal Table</h2>
+  <table>
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+      <td>Cell 3</td>
+    </tr>
+    <tr>
+      <td>Cell 4</td>
+      <td>Cell 5</td>
+      <td>Cell 6</td>
+    </tr>
+  </table>
+</body>
+</html>
