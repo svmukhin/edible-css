@@ -13,7 +13,7 @@ EdibleCSS is a primitive CSS framework that makes your HTML pages look professio
 Add this single line to your HTML `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/edible-css/edible.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css">
 ```
 
 **That's it.** Your page now looks good.
@@ -32,7 +32,7 @@ import 'edible-css/edible.css';
 
 ### Option 3: Download
 
-Download `edible.min.css` from [GitHub Releases](https://github.com/yourorg/edible-css/releases) and link it:
+Download `edible.min.css` from [GitHub Releases](https://github.com/svmukhin/edible-css/releases) and link it:
 
 ```html
 <link rel="stylesheet" href="path/to/edible.min.css">
@@ -49,7 +49,7 @@ Download `edible.min.css` from [GitHub Releases](https://github.com/yourorg/edib
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My First EdibleCSS Page</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/edible-css/edible.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css">
 </head>
 <body>
   <header>
@@ -224,8 +224,8 @@ Modern browsers only:
 
 ## Performance
 
-- **~50KB uncompressed** (easily cacheable)
-- **~10KB gzipped** (tiny network footprint)
+- **~25KB uncompressed** (easily cacheable)
+- **~4KB gzipped** (tiny network footprint)
 - **Zero JavaScript** (no runtime overhead)
 - **Instant rendering** (<100ms parse time)
 
@@ -253,7 +253,7 @@ Modern browsers only:
 
 ### Q: How do I contribute?
 
-**A:** Check the [GitHub repository](https://github.com/yourorg/edible-css) for contribution guidelines. Pull requests welcome!
+**A:** Check the [GitHub repository](https://github.com/svmukhin/edible-css) for contribution guidelines. Pull requests welcome!
 
 ## Troubleshooting
 
@@ -273,7 +273,7 @@ Dark mode respects your OS/browser setting. Test by:
 
 ### Content is too wide/narrow
 
-EdibleCSS constrains content to ~75 characters for readability. To override:
+EdibleCSS constrains content to 70ch (mobile), 75ch (tablet), or 80ch (desktop) for readability. To override:
 
 ```css
 body {
@@ -288,10 +288,8 @@ body {
 You're done! Go build something. EdibleCSS handles the design so you can focus on your content.
 
 **Links:**
-- [GitHub](https://github.com/yourorg/edible-css)
-- [Documentation](https://ediblecss.com/docs)
-- [Examples](https://ediblecss.com/examples)
-- [Report Issues](https://github.com/yourorg/edible-css/issues)
+- [GitHub](https://github.com/svmukhin/edible-css)
+- [Report Issues](https://github.com/svmukhin/edible-css/issues)
 
 ---
 
