@@ -9,7 +9,15 @@
   --border-primary: #d0d7de;
   --accent: #0969da;
   
-  /* Typography scale will be defined in T025 */
+  /* Typography Scale - Modular Scale (1.25 ratio - Major Third) */
+  --font-sm: 0.8rem;      /* 12.8px - small text, captions */
+  --font-md: 1rem;        /* 16px - body text, paragraphs */
+  --font-lg: 1.25rem;     /* 20px - h6 */
+  --font-xl: 1.563rem;    /* 25px - h5 */
+  --font-2xl: 1.953rem;   /* 31.25px - h4 */
+  --font-3xl: 2.441rem;   /* 39px - h3 */
+  --font-4xl: 3.052rem;   /* 48.8px - h2, h1 */
+  
   /* Spacing system will be defined in T026 */
 }
 
