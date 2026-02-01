@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "build": "postcss src/edible.css -o dist/edible.css",
-    "minify": "postcss dist/edible.css -o dist/edible.min.css --no-map --style compressed",
+    "minify": "postcss dist/edible.css -o dist/edible.min.css --no-map --use cssnano",
     "validate": "echo 'CSS validation skipped - using manual W3C validator'",
     "test:visual": "backstop test --config=test/backstop/backstop.json",
     "test:visual:reference": "backstop reference --config=test/backstop/backstop.json",
@@ -40,6 +40,7 @@
     "autoprefixer": "^10.4.20",
     "axe-core": "^4.10.2",
     "backstopjs": "^6.3.25",
+    "cssnano": "^7.1.2",
     "pa11y": "^8.0.0",
     "pa11y-ci": "^4.0.1",
     "postcss": "^8.4.49",
