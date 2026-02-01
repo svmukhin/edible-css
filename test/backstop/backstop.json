@@ -20,39 +20,39 @@
   "scenarios": [
     {
       "label": "Typography Elements",
-      "url": "../../test/samples/typography.html"
+      "url": "./test/samples/typography.html"
     },
     {
       "label": "Form Elements",
-      "url": "../../test/samples/forms.html"
+      "url": "./test/samples/forms.html"
     },
     {
       "label": "Table Elements",
-      "url": "../../test/samples/tables.html"
+      "url": "./test/samples/tables.html"
     },
     {
       "label": "List Elements",
-      "url": "../../test/samples/lists.html"
+      "url": "./test/samples/lists.html"
     },
     {
       "label": "Semantic Elements",
-      "url": "../../test/samples/semantic.html"
+      "url": "./test/samples/semantic.html"
     },
     {
       "label": "Code Elements",
-      "url": "../../test/samples/code.html"
+      "url": "./test/samples/code.html"
     },
     {
       "label": "Media Elements",
-      "url": "../../test/samples/media.html"
+      "url": "./test/samples/media.html"
     },
     {
       "label": "Interactive Elements",
-      "url": "../../test/samples/interactive.html"
+      "url": "./test/samples/interactive.html"
     },
     {
       "label": "Kitchen Sink",
-      "url": "../../test/samples/kitchen-sink.html"
+      "url": "./test/samples/kitchen-sink.html"
     }
   ],
   "paths": {
