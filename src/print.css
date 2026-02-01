@@ -1,0 +1,55 @@
+/* Print Styles */
+@media print {
+  body {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /* Don't show links for fragment identifiers or javascript protocol */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  /* Page breaks */
+  h1, h2, h3, h4, h5, h6 {
+    page-break-after: avoid;
+  }
+
+  blockquote, pre, table, figure {
+    page-break-inside: avoid;
+  }
+
+  /* Remove backgrounds for print */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Keep link colors visible */
+  a,
+  a:visited {
+    text-decoration: underline;
+    color: #000 !important;
+  }
+
+  /* Hide interactive elements */
+  button,
+  input[type="submit"],
+  input[type="button"],
+  video,
+  audio,
+  nav {
+    display: none;
+  }
+}
