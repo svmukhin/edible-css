@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Elements Test - EdibleCSS</title>
+  <link rel="stylesheet" href="../../dist/edible.css">
+</head>
+<body>
+  <h1>Interactive Elements</h1>
+
+  <h2>Details and Summary</h2>
+  
+  <details>
+    <summary>Click to expand: What is EdibleCSS?</summary>
+    <p>EdibleCSS is a primitive, classless CSS framework for developers with no design skills. It styles semantic HTML5 elements with a single link tag, requiring zero CSS classes or JavaScript.</p>
+  </details>
+
+  <details open>
+    <summary>This details element is open by default</summary>
+    <p>The <code>open</code> attribute makes this details element expanded when the page loads.</p>
+    <p>You can include multiple paragraphs and other content:</p>
+    <ul>
+      <li>List item one</li>
+      <li>List item two</li>
+      <li>List item three</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>Features</summary>
+    <ul>
+      <li>Zero CSS classes required</li>
+      <li>No JavaScript dependency</li>
+      <li>Responsive by default</li>
+      <li>Automatic light/dark mode</li>
+      <li>WCAG 2.1 AA compliant</li>
+    </ul>
+  </details>
+
+  <h2>Nested Details</h2>
+  
+  <details>
+    <summary>Level 1: Main Topic</summary>
+    <p>This is the first level of detail.</p>
+    
+    <details>
+      <summary>Level 2: Subtopic A</summary>
+      <p>This is nested detail content under subtopic A.</p>
+    </details>
+
+    <details>
+      <summary>Level 2: Subtopic B</summary>
+      <p>This is nested detail content under subtopic B.</p>
+      
+      <details>
+        <summary>Level 3: Deep nested content</summary>
+        <p>Three levels deep! Details can be nested as needed.</p>
+      </details>
+    </details>
+  </details>
+
+  <h2>Details with Complex Content</h2>
+  
+  <details>
+    <summary>Code Example</summary>
+    <p>Here's how to use EdibleCSS:</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="edible.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello World&lt;/h1&gt;
+  &lt;p&gt;Your styled page!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </details>
+
+  <details>
+    <summary>Table Example</summary>
+    <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Included</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Typography</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>Forms</td>
+          <td>✓</td>
+        </tr>
+        <tr>
+          <td>Tables</td>
+          <td>✓</td>
+        </tr>
+      </tbody>
+    </table>
+  </details>
+
+  <details>
+    <summary>Image Example</summary>
+    <figure>
+      <img src="https://via.placeholder.com/600x300/0969da/ffffff?text=Details+Content" alt="Example image in details">
+      <figcaption>Images work inside details elements</figcaption>
+    </figure>
+  </details>
+
+  <h2>Dialog Element</h2>
+  
+  <p>The dialog element represents a dialog box or modal. Note: Dialog requires JavaScript to open/close, but CSS should style it appropriately when opened.</p>
+
+  <dialog>
+    <h3>Dialog Title</h3>
+    <p>This is a dialog element. It can contain any HTML content.</p>
+    <p>Dialogs are typically used for:</p>
+    <ul>
+      <li>Modal windows</li>
+      <li>Confirmation prompts</li>
+      <li>User notifications</li>
+    </ul>
+    <button type="button">Close</button>
+  </dialog>
+
+  <dialog open>
+    <h3>Open Dialog</h3>
+    <p>This dialog has the <code>open</code> attribute, so it's visible by default (for testing CSS styling).</p>
+    <form method="dialog">
+      <label for="dialog-input">Input field in dialog:</label>
+      <input type="text" id="dialog-input" placeholder="Enter text">
+      <button type="submit">Submit</button>
+      <button type="button">Cancel</button>
+    </form>
+  </dialog>
+
+  <h2>Multiple Details Examples</h2>
+  
+  <details>
+    <summary>FAQ 1: How do I install EdibleCSS?</summary>
+    <p>Add a single link tag: <code>&lt;link rel="stylesheet" href="edible.css"&gt;</code></p>
+  </details>
+
+  <details>
+    <summary>FAQ 2: Do I need to write CSS classes?</summary>
+    <p>No! EdibleCSS styles semantic HTML elements only. Zero classes required.</p>
+  </details>
+
+  <details>
+    <summary>FAQ 3: Is JavaScript required?</summary>
+    <p>No JavaScript needed. Pure CSS solution.</p>
+  </details>
+
+  <details>
+    <summary>FAQ 4: What browsers are supported?</summary>
+    <p>Modern evergreen browsers: Chrome, Firefox, Safari, and Edge (last 2 versions).</p>
+  </details>
+</body>
+</html>
