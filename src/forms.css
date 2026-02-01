@@ -248,3 +248,19 @@ legend {
   padding: 0 var(--space-xs);
   color: var(--text-primary);
 }
+
+/* Labels */
+label {
+  display: inline-block;
+  margin-bottom: var(--space-xs);
+  font-weight: 500;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+label:has(+ input[type="checkbox"]),
+label:has(+ input[type="radio"]) {
+  display: inline;
+  margin-bottom: 0;
+  font-weight: normal;
+}
