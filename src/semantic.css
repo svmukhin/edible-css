@@ -65,3 +65,62 @@ dialog {
 dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
+
+/* Progress and Meter */
+progress,
+meter {
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  margin: var(--space-sm) 0;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: var(--bg-secondary);
+}
+
+progress::-webkit-progress-bar,
+meter::-webkit-meter-bar {
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+}
+
+progress::-webkit-progress-value {
+  background-color: var(--accent);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+progress::-moz-progress-bar {
+  background-color: var(--accent);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+meter::-webkit-meter-optimum-value {
+  background-color: #2da44e;
+}
+
+meter::-webkit-meter-suboptimum-value {
+  background-color: #fb8500;
+}
+
+meter::-webkit-meter-even-less-good-value {
+  background-color: #cf222e;
+}
+
+meter::-moz-meter-bar {
+  border-radius: 4px;
+}
+
+meter:-moz-meter-optimum::-moz-meter-bar {
+  background-color: #2da44e;
+}
+
+meter:-moz-meter-sub-optimum::-moz-meter-bar {
+  background-color: #fb8500;
+}
+
+meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+  background-color: #cf222e;
+}
