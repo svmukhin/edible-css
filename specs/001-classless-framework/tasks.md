@@ -13,6 +13,8 @@
 - **[Story]**: Which user story this task belongs to (e.g., US1, US2, US3)
 - Include exact file paths in descriptions
 
+**Note**: Phase numbering in tasks.md (1-6) represents implementation phases, distinct from planning phases (Phase 0: research, Phase 1: design) referenced in plan.md.
+
 ## Path Conventions
 
 - **Single project**: `src/`, `test/`, `dist/`, `docs/` at repository root

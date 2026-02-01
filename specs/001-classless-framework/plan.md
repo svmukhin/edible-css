@@ -14,7 +14,7 @@ EdibleCSS is a primitive, classless CSS framework that enables developers with z
 **Language/Version**: CSS3 (with PostCSS for build tooling - development only)  
 **Primary Dependencies**: None for end users; PostCSS/Autoprefixer for development builds (optional)  
 **Storage**: N/A (static CSS file)  
-**Testing**: NEEDS CLARIFICATION - Visual regression testing tool + W3C CSS validator + accessibility checker  
+**Testing**: BackstopJS (visual regression), css-validator (W3C), pa11y (accessibility)  
 **Target Platform**: Web browsers (Chrome, Firefox, Safari, Edge - last 2 versions)  
 **Project Type**: Single project (CSS framework with documentation)  
 **Performance Goals**: <50KB uncompressed CSS, <10KB minified+gzipped, <100ms stylesheet load/parse  
