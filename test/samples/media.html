@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Elements Test - EdibleCSS</title>
+  <link rel="stylesheet" href="../../dist/edible.css">
+</head>
+<body>
+  <h1>Media Elements</h1>
+
+  <h2>Basic Image</h2>
+  <img src="https://via.placeholder.com/800x400/0969da/ffffff?text=Placeholder+Image" alt="A placeholder image demonstrating responsive image scaling">
+
+  <h2>Image in Paragraph</h2>
+  <p>Here's an image inline with text: <img src="https://via.placeholder.com/100x100/0969da/ffffff?text=Small" alt="Small inline image" style="vertical-align: middle;"> The image should scale appropriately.</p>
+
+  <h2>Figure with Caption</h2>
+  <figure>
+    <img src="https://via.placeholder.com/800x600/0969da/ffffff?text=Figure+Image" alt="A figure image with caption">
+    <figcaption>Figure 1: This is a caption describing the image above. Captions provide context and should be styled distinctly.</figcaption>
+  </figure>
+
+  <figure>
+    <img src="https://via.placeholder.com/600x400/58a6ff/ffffff?text=Another+Figure" alt="Another figure image">
+    <figcaption>Figure 2: Figures can contain various types of media content, not just images.</figcaption>
+  </figure>
+
+  <h2>Multiple Images</h2>
+  <p>Testing how multiple images are displayed:</p>
+  <img src="https://via.placeholder.com/300x200/0969da/ffffff?text=Image+1" alt="First image">
+  <img src="https://via.placeholder.com/300x200/58a6ff/ffffff?text=Image+2" alt="Second image">
+  <img src="https://via.placeholder.com/300x200/0969da/ffffff?text=Image+3" alt="Third image">
+
+  <h2>Audio Element</h2>
+  <p>Audio player with controls:</p>
+  <audio controls>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <figure>
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <figcaption>Audio Sample: Background music demo</figcaption>
+  </figure>
+
+  <h2>Video Element</h2>
+  <p>Video player with controls:</p>
+  <video controls width="100%" style="max-width: 640px;">
+    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+    Your browser does not support the video element.
+  </video>
+
+  <figure>
+    <video controls width="100%" style="max-width: 640px;">
+      <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+      <track kind="captions" src="" srclang="en" label="English captions">
+      Your browser does not support the video element.
+    </video>
+    <figcaption>Video Demo: Big Buck Bunny sample video</figcaption>
+  </figure>
+
+  <h2>Responsive Image Test</h2>
+  <p>This image should scale to fit the container width on all screen sizes:</p>
+  <img src="https://via.placeholder.com/1600x900/0969da/ffffff?text=Large+Wide+Image" alt="Large wide image for responsive testing">
+
+  <h2>Figure with Code</h2>
+  <figure>
+    <pre><code>function example() {
+  console.log('Figures can contain code too!');
+}</code></pre>
+    <figcaption>Code Example: A simple JavaScript function</figcaption>
+  </figure>
+
+  <h2>Figure with Blockquote</h2>
+  <figure>
+    <blockquote>
+      <p>Design is not just what it looks like and feels like. Design is how it works.</p>
+    </blockquote>
+    <figcaption>Steve Jobs on design philosophy</figcaption>
+  </figure>
+</body>
+</html>
