@@ -45,44 +45,44 @@
 
 ### CSS Files (13 files in src/)
 
-- [ ] T006 [P] [US1] Add SPDX header to src/base.css
-- [ ] T007 [P] [US1] Add SPDX header to src/dark-mode.css
-- [ ] T008 [P] [US1] Add SPDX header to src/edible.css
-- [ ] T009 [P] [US1] Add SPDX header to src/forms.css
-- [ ] T010 [P] [US1] Add SPDX header to src/lists.css
-- [ ] T011 [P] [US1] Add SPDX header to src/media.css
-- [ ] T012 [P] [US1] Add SPDX header to src/print.css
-- [ ] T013 [P] [US1] Add SPDX header to src/reset.css
-- [ ] T014 [P] [US1] Add SPDX header to src/semantic.css
-- [ ] T015 [P] [US1] Add SPDX header to src/tables.css
-- [ ] T016 [P] [US1] Add SPDX header to src/tokens.css
-- [ ] T017 [P] [US1] Add SPDX header to src/typography.css
-- [ ] T018 [P] [US1] Add SPDX header to src/utilities.css
+- [X] T006 [P] [US1] Add SPDX header to src/base.css
+- [X] T007 [P] [US1] Add SPDX header to src/dark-mode.css
+- [X] T008 [P] [US1] Add SPDX header to src/edible.css
+- [X] T009 [P] [US1] Add SPDX header to src/forms.css
+- [X] T010 [P] [US1] Add SPDX header to src/lists.css
+- [X] T011 [P] [US1] Add SPDX header to src/media.css
+- [X] T012 [P] [US1] Add SPDX header to src/print.css
+- [X] T013 [P] [US1] Add SPDX header to src/reset.css
+- [X] T014 [P] [US1] Add SPDX header to src/semantic.css
+- [X] T015 [P] [US1] Add SPDX header to src/tables.css
+- [X] T016 [P] [US1] Add SPDX header to src/tokens.css
+- [X] T017 [P] [US1] Add SPDX header to src/typography.css
+- [X] T018 [P] [US1] Add SPDX header to src/utilities.css
 
 ### JavaScript Files (1 file)
 
-- [ ] T019 [P] [US1] Add SPDX header to postcss.config.js
+- [X] T019 [P] [US1] Add SPDX header to postcss.config.js
 
 ### HTML Files in docs/ (6 files)
 
-- [ ] T020 [P] [US1] Add SPDX header to docs/index.html
-- [ ] T021 [P] [US1] Add SPDX header to docs/examples/basic.html
-- [ ] T022 [P] [US1] Add SPDX header to docs/examples/form.html
-- [ ] T023 [P] [US1] Add SPDX header to docs/examples/navigation.html
-- [ ] T024 [P] [US1] Add SPDX header to docs/examples/table.html
-- [ ] T025 [P] [US1] Add SPDX header to docs/examples/typography.html
+- [X] T020 [P] [US1] Add SPDX header to docs/index.html
+- [X] T021 [P] [US1] Add SPDX header to docs/examples/basic.html
+- [X] T022 [P] [US1] Add SPDX header to docs/examples/form.html
+- [X] T023 [P] [US1] Add SPDX header to docs/examples/navigation.html
+- [X] T024 [P] [US1] Add SPDX header to docs/examples/table.html
+- [X] T025 [P] [US1] Add SPDX header to docs/examples/typography.html
 
 ### HTML Files in test/samples/ (9 files)
 
-- [ ] T026 [P] [US1] Add SPDX header to test/samples/code.html
-- [ ] T027 [P] [US1] Add SPDX header to test/samples/forms.html
-- [ ] T028 [P] [US1] Add SPDX header to test/samples/interactive.html
-- [ ] T029 [P] [US1] Add SPDX header to test/samples/kitchen-sink.html
-- [ ] T030 [P] [US1] Add SPDX header to test/samples/lists.html
-- [ ] T031 [P] [US1] Add SPDX header to test/samples/media.html
-- [ ] T032 [P] [US1] Add SPDX header to test/samples/semantic.html
-- [ ] T033 [P] [US1] Add SPDX header to test/samples/tables.html
-- [ ] T034 [P] [US1] Add SPDX header to test/samples/typography.html
+- [X] T026 [P] [US1] Add SPDX header to test/samples/code.html
+- [X] T027 [P] [US1] Add SPDX header to test/samples/forms.html
+- [X] T028 [P] [US1] Add SPDX header to test/samples/interactive.html
+- [X] T029 [P] [US1] Add SPDX header to test/samples/kitchen-sink.html
+- [X] T030 [P] [US1] Add SPDX header to test/samples/lists.html
+- [X] T031 [P] [US1] Add SPDX header to test/samples/media.html
+- [X] T032 [P] [US1] Add SPDX header to test/samples/semantic.html
+- [X] T033 [P] [US1] Add SPDX header to test/samples/tables.html
+- [X] T034 [P] [US1] Add SPDX header to test/samples/typography.html
 
 ### Validation for User Story 1
 

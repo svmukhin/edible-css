@@ -1,3 +1,8 @@
+/*
+ * SPDX-FileCopyrightText: 2026 Sergei Mukhin
+ * SPDX-License-Identifier: MIT
+ */
+
 /* Dark Mode Overrides 
  * Core dark mode colors are defined in tokens.css using @media (prefers-color-scheme: dark)
  * This file provides element-specific adjustments for optimal dark mode appearance
