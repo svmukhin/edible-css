@@ -25,7 +25,7 @@
 3. **License Validity**: Identifier MUST match SPDX license list (validated by REUSE tool)
 4. **Comment Syntax**: Format MUST match file type:
    - CSS/JS: `/* ... */`
-   - HTML/Markdown: `<!-- ... -->`
+   - HTML: `<!-- ... -->`
 5. **Multiple Copyright Holders**: Multiple `SPDX-FileCopyrightText` lines permitted, each on separate line
 
 ### State Transitions
@@ -65,7 +65,7 @@
 | **CSS** | ✅ Yes | Inline Header | `src/*.css` |
 | **JavaScript** | ✅ Yes | Inline Header | `postcss.config.js` |
 | **HTML** | ✅ Yes | Inline Header | `docs/examples/*.html` |
-| **Markdown** | ✅ Yes | Inline Header | `README.md`, `docs/*.md`, `specs/**/*.md` |
+| **Markdown** | ❌ No | Excluded | `README.md`, `docs/*.md`, `specs/**/*.md` - covered by LICENSE.txt |
 | **JSON Config** | ❌ No | Excluded | `package.json`, `.markdownlint-cli2.yaml` |
 | **YAML Config** | ❌ No | Excluded | `.github/workflows/*.yml` |
 | **Binary** | ⚠️ Yes | DEP5 | Images, fonts (if any) |
@@ -74,7 +74,7 @@
 ### Validation
 
 ```
-IF fileType IN [CSS, JAVASCRIPT, HTML, MARKDOWN]:
+IF fileType IN [CSS, JAVASCRIPT, HTML]:
   MUST have inline SPDX header
 ELSE IF fileType == BINARY:
   MUST have DEP5 entry OR sidecar .license file

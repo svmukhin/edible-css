@@ -20,16 +20,16 @@
 
 ### User Story 1 - Clear License Attribution in Source Files (Priority: P1)
 
-A developer or legal reviewer opens any source file (CSS, JavaScript, HTML) or documentation file (markdown) in the EdibleCSS repository and immediately sees standardized SPDX headers indicating copyright holder and license type. This enables quick license compliance audits, automated tooling integration, and clear attribution without reading separate LICENSE files.
+A developer or legal reviewer opens any source code file (CSS, JavaScript, HTML) in the EdibleCSS repository and immediately sees standardized SPDX headers indicating copyright holder and license type. This enables quick license compliance audits, automated tooling integration, and clear attribution without reading separate LICENSE files.
 
 **Why this priority**: License compliance is a legal requirement for open-source projects. SPDX is the industry standard for machine-readable license metadata. This is foundational infrastructure that should exist before public distribution.
 
-**Independent Test**: Select any source file, verify SPDX headers are present and correctly formatted with copyright and license identifier.
+**Independent Test**: Select any source code file (CSS/JS/HTML), verify SPDX headers are present and correctly formatted with copyright and license identifier.
 
 **Acceptance Scenarios**:
 
 1. **Given** a CSS source file (e.g., `src/edible.css`), **When** a developer opens it, **Then** the file contains `SPDX-FileCopyrightText: 2026 Sergei Mukhin` and `SPDX-License-Identifier: MIT` in a comment block at the top.
-2. **Given** a markdown documentation file (e.g., `README.md`, spec files), **When** inspected, **Then** the file contains SPDX headers in HTML comment format `<!-- SPDX-FileCopyrightText: ... -->`.
+2. **Given** an HTML file (e.g., `docs/index.html`), **When** inspected, **Then** the file contains SPDX headers in HTML comment format `<!-- SPDX-FileCopyrightText: ... -->`.
 3. **Given** a JavaScript source file (e.g., `postcss.config.js`), **When** viewed, **Then** the file contains SPDX headers in JS comment format at the top (configuration JSON/YAML files are excluded from SPDX requirements).
 
 ---
@@ -74,8 +74,8 @@ Open-source license compliance tools (specifically `fsfe/reuse-action@v6` GitHub
   - **Answer**: Exclude from SPDX requirements via `.gitignore`. Generated files inherit source file licenses.
 - What if a file has multiple copyright holders (e.g., external contributions)?
   - **Answer**: Multiple `SPDX-FileCopyrightText` lines are allowed: one per copyright holder.
-- How are markdown files handled given different comment syntaxes?
-  - **Answer**: Markdown uses HTML comments `<!-- SPDX-... -->` for SPDX headers.
+- How are markdown files handled for licensing?
+  - **Answer**: Markdown files are excluded from SPDX header requirements. They are covered by the project-wide LICENSE.txt and declared in `.reuse/dep5`. Only markdown linting (quality checks) applies to these files.
 - What if markdownlint rules conflict with project needs (e.g., long lines in tables)?
   - **Answer**: Configure `.markdownlint-cli2.yaml` with rule exceptions (already done for code blocks and tables).
 
@@ -84,8 +84,7 @@ Open-source license compliance tools (specifically `fsfe/reuse-action@v6` GitHub
 ### Functional Requirements
 
 - **FR-001**: All source code files (CSS, JavaScript, TypeScript, HTML, etc.) MUST contain SPDX headers in their native comment syntax at the top of the file.
-- **FR-002**: All markdown documentation files MUST contain SPDX headers in HTML comment format (`<!-- SPDX-FileCopyrightText: ... -->`).
-- **FR-002a**: Configuration files (JSON, YAML, etc.) are excluded from SPDX header requirements.
+- **FR-002**: Configuration files (JSON, YAML, etc.) and markdown documentation files are excluded from SPDX header requirements.
 - **FR-003**: SPDX headers MUST include two required lines:
   - `SPDX-FileCopyrightText: <year> <copyright holder>`
   - `SPDX-License-Identifier: <SPDX-license-expression>`
@@ -129,7 +128,7 @@ Open-source license compliance tools (specifically `fsfe/reuse-action@v6` GitHub
 
 **File Categories** (for licensing):
 1. **Source files**: CSS, JS, TS, HTML - require inline SPDX headers
-2. **Documentation**: Markdown files - require HTML comment SPDX headers
+2. **Documentation**: Markdown files - excluded from SPDX requirements (covered by project LICENSE.txt and `.reuse/dep5`)
 3. **Configuration**: JSON, YAML, config files - excluded from SPDX requirements (inherit project license)
 4. **Binary files**: Images, fonts - require sidecar `.license` files or dep5 entry
 5. **Generated files**: `dist/`, `node_modules/` - excluded (not tracked in git)
@@ -138,7 +137,7 @@ Open-source license compliance tools (specifically `fsfe/reuse-action@v6` GitHub
 
 ### Measurable Outcomes
 
-- **SC-001**: 100% of tracked source files (CSS, JS, HTML, markdown) contain valid SPDX headers with correct copyright and license (config files excluded).
+- **SC-001**: 100% of tracked source code files (CSS, JS, HTML) contain valid SPDX headers with correct copyright and license (config files and markdown excluded).
 - **SC-002**: Running `reuse lint` (REUSE.software compliance checker) on the repository produces zero errors.
 - **SC-003**: Running `markdownlint-cli2 "**/*.md"` on the repository produces zero errors.
 - **SC-004**: CI pipeline includes markdown linting job that fails on violations (verifiable in GitHub Actions or equivalent).

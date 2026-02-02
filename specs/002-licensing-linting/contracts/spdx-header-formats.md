@@ -144,11 +144,32 @@ module.exports = {
 
 ## Markdown Files
 
+> **⚠️ EXCLUDED FROM SPDX REQUIREMENTS**  
+> Per user clarification (2026-02-02): Markdown files do NOT require SPDX headers. Covered by root `LICENSE.txt` and `.reuse/dep5`.
+
 **File Extensions**: `.md`, `.markdown`  
-**Comment Syntax**: HTML comment `<!-- ... -->` (HTML comments valid in markdown)  
+**SPDX Treatment**: Not required  
 **Examples**: `README.md`, `docs/api.md`, `specs/002-licensing-linting/spec.md`
 
-### Format Specification
+### Rationale
+
+- Markdown files are documentation, not compiled source code
+- Already covered by project LICENSE.txt (applies to entire repository)
+- REUSE compliance via DEP5 bulk exclusion more maintainable
+- Linting handled separately by markdownlint-cli2
+
+### DEP5 Entry (Reference)
+
+```
+Files: *.md docs/*.md specs/**/*.md
+Copyright: 2026 Sergei Mukhin
+License: MIT
+```
+
+### Historical Format (For Reference Only)
+
+<details>
+<summary>If policy changes in future, this format could be used</summary>
 
 ```markdown
 <!--
@@ -161,51 +182,17 @@ SPDX-License-Identifier: MIT
 [File content starts here]
 ```
 
-### Rules
+**Note**: MD041 rule would need to be disabled to allow SPDX headers before first heading.
 
-1. Opening delimiter `<!--` MUST be on line 1
-2. SPDX tags MUST NOT be indented (no leading spaces)
-3. `SPDX-FileCopyrightText` MUST appear before `SPDX-License-Identifier`
-4. Closing delimiter `-->` MUST be on separate line
-5. One blank line MUST separate header from first heading
-6. First heading (H1) should follow immediately after blank line
-
-### markdownlint Compatibility
-
-**Important**: MD041 rule (first-line-heading) MUST be disabled in `.markdownlint-cli2.yaml` to allow SPDX headers before H1.
-
-Configuration:
-```yaml
-config:
-  MD041: false  # Allow SPDX header before first heading
-```
-
-### Example: README.md
-
-```markdown
-<!--
-SPDX-FileCopyrightText: 2026 Sergei Mukhin
-SPDX-License-Identifier: MIT
--->
-
-# EdibleCSS
-
-A primitive, classless CSS framework for developers with no design skills.
-
-## Features
-
-- Zero CSS classes
-- Pure semantic HTML5
-- Single `<link>` tag to get started
-- No JavaScript required
-```
+</details>
 
 ---
 
 ## Multiple Copyright Holders
 
 **Use Case**: External contributions or multi-author files  
-**Format**: Multiple `SPDX-FileCopyrightText` lines
+**Format**: Multiple `SPDX-FileCopyrightText` lines  
+**Applicable To**: CSS, JavaScript, HTML only (markdown excluded)
 
 ### CSS/JavaScript Example
 
@@ -217,7 +204,7 @@ A primitive, classless CSS framework for developers with no design skills.
  */
 ```
 
-### HTML/Markdown Example
+### HTML Example
 
 ```html
 <!--

@@ -1,14 +1,16 @@
 # Quickstart: Licensing and Linting Standards
 
 **Feature**: 002-licensing-linting | **Date**: 2026-02-02  
-**Time to Complete**: ~45 minutes  
+**Time to Complete**: ~30 minutes  
 **Prerequisites**: Node.js 22+, Git, text editor
 
 ---
 
 ## Overview
 
-This guide will help you implement SPDX headers and markdown linting for EdibleCSS in the correct order to avoid CI failures and ensure smooth integration.
+This guide will help you implement SPDX headers (for CSS, JS, HTML) and markdown linting for EdibleCSS in the correct order to avoid CI failures and ensure smooth integration.
+
+**Note**: Markdown files do NOT require SPDX headers per user clarification - covered by root LICENSE.txt.
 
 ---
 
@@ -116,14 +118,16 @@ Upstream-Name: edible-css
 Upstream-Contact: Sergei Mukhin <contact@example.com>
 Source: https://github.com/svmukhin/edible-css
 
-Files: dist/* package-lock.json test/backstop/test/* node_modules/* .gitignore package.json .markdownlint-cli2.yaml backstop.json test/backstop/backstop.json
+Files: dist/* package-lock.json test/backstop/test/* node_modules/* .gitignore package.json .markdownlint-cli2.yaml backstop.json test/backstop/backstop.json *.md docs/*.md specs/**/*.md
 Copyright: 2026 Sergei Mukhin
 License: MIT
 ```
 
+**Important**: This includes `*.md docs/*.md specs/**/*.md` to cover all markdown files without SPDX headers.
+
 ---
 
-## Phase 3: Add SPDX Headers (20 minutes)
+## Phase 3: Add SPDX Headers (15 minutes)
 
 ### Step 3.1: CSS Files (13 files)
 
@@ -196,29 +200,6 @@ Add to **top** of each HTML file:
 - `test/samples/semantic.html`
 - `test/samples/tables.html`
 - `test/samples/typography.html`
-
-### Step 3.4: Markdown Files (~30 files)
-
-Add to **top** of each markdown file:
-
-```markdown
-<!--
-SPDX-FileCopyrightText: 2026 Sergei Mukhin
-SPDX-License-Identifier: MIT
--->
-```
-
-**Root files**:
-- `README.md`
-
-**Docs**:
-- `docs/api.md`
-
-**Specs** (all files in `specs/`):
-- `specs/001-classless-framework/*.md`
-- `specs/002-licensing-linting/*.md`
-
-**Note**: Ensure blank line after closing `-->` before first H1 heading.
 
 ---
 

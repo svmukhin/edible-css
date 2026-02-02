@@ -7,7 +7,7 @@
 
 ## Summary
 
-Add SPDX license headers to all source files (CSS, JavaScript, HTML, markdown) and integrate markdownlint-cli2 for automated markdown quality enforcement in CI. This feature establishes license compliance infrastructure using `fsfe/reuse-action@v6` for REUSE specification validation and `DavidAnson/markdownlint-cli2-action` for markdown linting, both running as GitHub Actions in CI pipelines. No pre-commit hooks or local enforcement required - validation happens exclusively in CI.
+Add SPDX license headers to source code files (CSS, JavaScript, HTML) and integrate markdownlint-cli2 for automated markdown quality enforcement in CI. Configuration files and markdown files are excluded from SPDX header requirements. This feature establishes license compliance infrastructure using `fsfe/reuse-action@v6` for REUSE specification validation and `DavidAnson/markdownlint-cli2-action` for markdown linting, both running as GitHub Actions in CI pipelines. No pre-commit hooks or local enforcement required - validation happens exclusively in CI.
 
 ## Technical Context
 
@@ -28,10 +28,10 @@ Add SPDX license headers to all source files (CSS, JavaScript, HTML, markdown) a
   - No pre-commit hooks (CI-only enforcement by user request)
   - Config files (JSON/YAML) excluded from SPDX requirements
 **Scale/Scope**: 
-  - ~15 CSS source files in src/
-  - ~30 markdown files across docs/, specs/, README.md
-  - ~5 HTML example files in docs/examples/ and test/samples/
-  - ~3 JavaScript config files (postcss.config.js, etc.)
+  - ~13 CSS source files in src/
+  - ~15 HTML files across docs/ and test/samples/
+  - ~1 JavaScript config file (postcss.config.js)
+  - ~30 markdown files (linting only, no SPDX headers)
 
 ## Constitution Check
 
@@ -271,34 +271,7 @@ No complexity violations detected. Constitution check fully passed with no excep
 
 ---
 
-### Phase 5: Add SPDX Headers - Markdown (Priority: P1)
-
-**Goal**: Add SPDX headers to all markdown documentation
-
-**Tasks**:
-1. Add header to `README.md`
-2. Add header to `docs/api.md`
-3. Add header to all files in `specs/001-classless-framework/`:
-   - spec.md, plan.md, research.md, data-model.md, quickstart.md, tasks.md
-   - checklists/requirements.md
-4. Add header to all files in `specs/002-licensing-linting/`:
-   - spec.md, plan.md, research.md, data-model.md, quickstart.md
-   - contracts/spdx-header-formats.md
-   - checklists/requirements.md (if exists)
-5. Format: HTML comment in markdown `<!-- ... -->` with blank line after
-6. Run `npm run lint:md` - should pass with MD041 disabled
-
-**Acceptance**:
-- [ ] All ~30 markdown files have SPDX headers
-- [ ] Blank line exists between header and first H1
-- [ ] `npm run lint:md` passes with zero errors
-- [ ] Markdown renders correctly on GitHub (preview)
-
-**Estimated Time**: 15 minutes
-
----
-
-### Phase 6: REUSE Validation (Priority: P2)
+### Phase 5: REUSE Validation (Priority: P2)
 
 **Goal**: Verify full REUSE compliance locally before CI
 
@@ -318,7 +291,7 @@ No complexity violations detected. Constitution check fully passed with no excep
 
 ---
 
-### Phase 7: GitHub Actions CI (Priority: P2)
+### Phase 6: GitHub Actions CI (Priority: P2)
 
 **Goal**: Automate compliance checks in CI pipeline
 
@@ -339,7 +312,7 @@ No complexity violations detected. Constitution check fully passed with no excep
 
 ---
 
-### Phase 8: Verification & Documentation (Priority: P3)
+### Phase 7: Verification & Documentation (Priority: P3)
 
 **Goal**: Final testing and contributor documentation
 
@@ -367,14 +340,14 @@ Phase 0 (Infrastructure)
     ↓
 Phase 1 (CSS Headers) ──┐
 Phase 2 (JS Headers) ───┤
-Phase 3 (HTML Headers) ─┼→ Phase 5 (REUSE Validation)
-Phase 4 (MD Headers) ───┘        ↓
-                            Phase 6 (GitHub Actions)
-                                 ↓
-                            Phase 7 (Final Verification)
+Phase 3 (HTML Headers) ─┼→ Phase 4 (REUSE Validation)
+                              ↓
+                         Phase 5 (GitHub Actions)
+                              ↓
+                         Phase 6 (Final Verification)
 ```
 
-**Critical Path**: Phases 0-5 must be sequential. Phase 6-7 can run in parallel if desired.
+**Critical Path**: Phases 0-4 must be sequential. Phase 5-6 can run in parallel if desired.
 
 ---
 
