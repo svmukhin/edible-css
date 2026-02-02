@@ -1,0 +1,8 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: edible-css
+Upstream-Contact: Sergei Mukhin <contact@example.com>
+Source: https://github.com/svmukhin/edible-css
+
+Files: dist/* package-lock.json test/backstop/test/* node_modules/* .gitignore package.json .markdownlint-cli2.yaml backstop.json test/backstop/backstop.json *.md docs/*.md specs/**/*.md
+Copyright: 2026 Sergei Mukhin
+License: MIT
