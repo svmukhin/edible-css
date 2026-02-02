@@ -7,7 +7,9 @@
 
 ## Overview
 
-This contract defines the precise format of SPDX headers for all file types in the EdibleCSS repository. These formats MUST be followed exactly to pass REUSE.software compliance validation via `fsfe/reuse-action@v6`.
+This contract defines the precise format of SPDX headers for all file types in
+the EdibleCSS repository. These formats MUST be followed exactly to pass
+REUSE.software compliance validation via `fsfe/reuse-action@v6`.
 
 **Contract Status**: ✅ Binding - Implementation MUST match these formats exactly
 
@@ -35,7 +37,7 @@ This contract defines the precise format of SPDX headers for all file types in t
 1. Opening comment delimiter `/*` MUST be on line 1
 2. SPDX tags MUST be indented with single space + asterisk + space: ` * `
 3. `SPDX-FileCopyrightText` MUST appear before `SPDX-License-Identifier`
-4. Closing delimiter ` */` MUST be on separate line
+4. Closing delimiter `*/` MUST be on separate line
 5. One blank line recommended after header before content
 
 ### Example: src/tokens.css
@@ -97,7 +99,8 @@ module.exports = {
 
 **File Extensions**: `.html`  
 **Comment Syntax**: HTML comment `<!-- ... -->`  
-**Examples**: `docs/index.html`, `docs/examples/basic.html`, `test/samples/forms.html`
+**Examples**: `docs/index.html`, `docs/examples/basic.html`,
+`test/samples/forms.html`
 
 ### Format Specification
 
@@ -145,7 +148,8 @@ module.exports = {
 ## Markdown Files
 
 > **⚠️ EXCLUDED FROM SPDX REQUIREMENTS**  
-> Per user clarification (2026-02-02): Markdown files do NOT require SPDX headers. Covered by root `LICENSE.txt` and `.reuse/dep5`.
+>Per user clarification (2026-02-02): Markdown files do NOT require SPDX
+>headers. Covered by root `LICENSE.txt` and `.reuse/dep5`.
 
 **File Extensions**: `.md`, `.markdown`  
 **SPDX Treatment**: Not required  
@@ -160,7 +164,7 @@ module.exports = {
 
 ### DEP5 Entry (Reference)
 
-```
+```ini
 Files: *.md docs/*.md specs/**/*.md
 Copyright: 2026 Sergei Mukhin
 License: MIT
@@ -182,7 +186,8 @@ SPDX-License-Identifier: MIT
 [File content starts here]
 ```
 
-**Note**: MD041 rule would need to be disabled to allow SPDX headers before first heading.
+**Note**: MD041 rule would need to be disabled to allow SPDX headers before
+first heading.
 
 </details>
 
@@ -239,7 +244,7 @@ SPDX-License-Identifier: MIT
 
 ### DEP5 Format
 
-```
+```ini
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: edible-css
 Upstream-Contact: Sergei Mukhin
@@ -261,17 +266,20 @@ License: MIT
 **Failure**: CI fails with "Header not found at top of file"
 
 **Test Cases**:
+
 - ✅ PASS: Header at line 1
 - ❌ FAIL: Header at line 5 (after docstring)
 - ❌ FAIL: Header at end of file
 
 ### Contract 2: Required Fields
 
-**Requirement**: Both `SPDX-FileCopyrightText` AND `SPDX-License-Identifier` MUST be present  
+**Requirement**: Both `SPDX-FileCopyrightText` AND `SPDX-License-Identifier`
+MUST be present
 **Validation**: `reuse lint` checks for both tags  
 **Failure**: CI fails with "Missing required SPDX tag"
 
 **Test Cases**:
+
 - ✅ PASS: Both tags present
 - ❌ FAIL: Only copyright (missing license identifier)
 - ❌ FAIL: Only license identifier (missing copyright)
@@ -284,6 +292,7 @@ License: MIT
 **Failure**: CI fails with "Invalid or missing license"
 
 **Test Cases**:
+
 - ✅ PASS: `MIT`
 - ❌ FAIL: `Apache-2.0` (wrong license)
 - ❌ FAIL: `mit` (wrong case - must be uppercase)
@@ -296,6 +305,7 @@ License: MIT
 **Failure**: CI fails with "Unable to parse SPDX information"
 
 **Test Cases**:
+
 - ✅ PASS: CSS file with `/* ... */` comments
 - ✅ PASS: HTML file with `<!-- ... -->` comments
 - ❌ FAIL: CSS file with `<!-- ... -->` comments (wrong syntax)
@@ -309,12 +319,14 @@ License: MIT
 
 **Input**: Repository files with SPDX headers  
 **Process**: Runs `reuse lint` on all tracked files  
-**Output**: 
+**Output**:
+
 - Exit code 0: All files compliant
 - Exit code 1: Non-compliant files found (CI fails)
 - Detailed report: Lists each non-compliant file with reason
 
 **CI Configuration**:
+
 ```yaml
 - uses: fsfe/reuse-action@v6
   # No additional configuration needed
@@ -325,12 +337,14 @@ License: MIT
 
 **Command**: `reuse lint` (requires REUSE tool installed)  
 **Installation**: `pip install reuse` OR use Docker image  
-**Usage**: 
+**Usage**:
+
 ```bash
 reuse lint  # Check entire repository
 ```
 
 **Optional**: Add to package.json scripts:
+
 ```json
 {
   "scripts": {
@@ -368,7 +382,8 @@ reuse lint  # Check entire repository
 ### Quick Reference
 
 **CSS/JS**:
-```
+
+```css
 /*
  * SPDX-FileCopyrightText: 2026 Sergei Mukhin
  * SPDX-License-Identifier: MIT
@@ -376,7 +391,8 @@ reuse lint  # Check entire repository
 ```
 
 **HTML**:
-```
+
+```html
 <!--
   SPDX-FileCopyrightText: 2026 Sergei Mukhin
   SPDX-License-Identifier: MIT
@@ -384,7 +400,8 @@ reuse lint  # Check entire repository
 ```
 
 **Markdown**:
-```
+
+```markdown
 <!--
 SPDX-FileCopyrightText: 2026 Sergei Mukhin
 SPDX-License-Identifier: MIT

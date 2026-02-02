@@ -8,7 +8,8 @@ Complete reference of all HTML elements styled by EdibleCSS v0.1.0.
 
 **Elements:** `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 
-All heading levels are styled with appropriate font sizes using a 1.25 modular scale. Margins are automatically adjusted for proper spacing.
+All heading levels are styled with appropriate font sizes using a 1.25 modular
+scale. Margins are automatically adjusted for proper spacing.
 
 - `<h1>`: Largest heading (3.052rem)
 - `<h2>`: Second level (2.441rem)
@@ -21,13 +22,15 @@ All heading levels are styled with appropriate font sizes using a 1.25 modular s
 
 **Element:** `<p>`
 
-Standard paragraph styling with comfortable line-height (1.6) and bottom margin for spacing.
+Standard paragraph styling with comfortable line-height (1.6) and bottom margin
+for spacing.
 
 ### Links
 
 **Element:** `<a>`
 
 Links are styled with:
+
 - Accent color (blue)
 - Underline decoration
 - Thicker underline on hover
@@ -36,7 +39,8 @@ Links are styled with:
 
 ### Text Formatting
 
-**Elements:** `<strong>`, `<b>`, `<em>`, `<i>`, `<small>`, `<mark>`, `<del>`, `<ins>`, `<sub>`, `<sup>`
+**Elements:** `<strong>`, `<b>`, `<em>`, `<i>`, `<small>`, `<mark>`, `<del>`,
+`<ins>`, `<sub>`, `<sup>`
 
 - `<strong>`, `<b>`: Bold text (font-weight: 700)
 - `<em>`, `<i>`: Italic text
@@ -79,6 +83,7 @@ Links are styled with:
 **Elements:** `<ul>`, `<li>`
 
 Bullet lists with nested support:
+
 - First level: disc (•)
 - Second level: circle (○)
 - Third level: square (■)
@@ -88,6 +93,7 @@ Bullet lists with nested support:
 **Elements:** `<ol>`, `<li>`
 
 Numbered lists with nested support:
+
 - First level: decimal (1, 2, 3)
 - Second level: lower-alpha (a, b, c)
 - Third level: lower-roman (i, ii, iii)
@@ -102,9 +108,11 @@ Numbered lists with nested support:
 
 ## Table Elements
 
-**Elements:** `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>`, `<caption>`
+**Elements:** `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>`, `<td>`,
+`<caption>`
 
 Tables include:
+
 - Bordered cells with consistent spacing
 - Zebra striping (alternate row colors)
 - Hover effects on rows
@@ -115,9 +123,14 @@ Tables include:
 
 ### Text Inputs
 
-**Elements:** `<input type="text">`, `<input type="email">`, `<input type="password">`, `<input type="search">`, `<input type="url">`, `<input type="tel">`, `<input type="number">`, `<input type="date">`, `<input type="datetime-local">`, `<input type="month">`, `<input type="week">`, `<input type="time">`, `<textarea>`
+**Elements:** `<input type="text">`, `<input type="email">`, `<input
+type="password">`, `<input type="search">`, `<input type="url">`, `<input
+type="tel">`, `<input type="number">`, `<input type="date">`, `<input
+type="datetime-local">`, `<input type="month">`, `<input type="week">`, `<input
+type="time">`, `<textarea>`
 
 All text inputs feature:
+
 - Full-width by default
 - Padding and comfortable font size
 - Border with focus state (accent color)
@@ -126,9 +139,11 @@ All text inputs feature:
 
 ### Buttons
 
-**Elements:** `<button>`, `<input type="submit">`, `<input type="button">`, `<input type="reset">`
+**Elements:** `<button>`, `<input type="submit">`, `<input type="button">`,
+`<input type="reset">`
 
 Buttons include:
+
 - WCAG AA compliant colors (4.5:1 contrast)
 - Hover and active states
 - Focus outline
@@ -140,6 +155,7 @@ Buttons include:
 **Elements:** `<select>`, `<option>`
 
 Styled select menus with:
+
 - Consistent sizing with other inputs
 - Focus states
 - Multiple select support
@@ -198,6 +214,7 @@ Styled select menus with:
 **Element:** `<nav>`
 
 Navigation areas with:
+
 - Secondary background color
 - Horizontal flexbox layout for lists
 - Hover states on links
@@ -214,6 +231,7 @@ Main content area with appropriate margins.
 **Element:** `<article>`
 
 Article containers with:
+
 - Padding and spacing
 - Subtle border on all sides
 - Light background
@@ -223,6 +241,7 @@ Article containers with:
 **Element:** `<aside>`
 
 Sidebar content with:
+
 - Secondary background
 - Lighter text color
 - Smaller font size
@@ -253,6 +272,7 @@ Contact information with italic styling.
 **Elements:** `<details>`, `<summary>`
 
 Collapsible content blocks:
+
 - `<summary>`: Clickable toggle with hover states
 - `<details>`: Container with border and padding
 
@@ -292,7 +312,9 @@ Horizontal dividers with subtle border.
 
 ### Dark Mode
 
-All elements automatically adapt to dark mode when `prefers-color-scheme: dark` is detected:
+All elements automatically adapt to dark mode when `prefers-color-scheme: dark`
+is detected:
+
 - Inverted color scheme
 - Reduced image/media brightness
 - Enhanced form field backgrounds
@@ -301,6 +323,7 @@ All elements automatically adapt to dark mode when `prefers-color-scheme: dark` 
 ### Print Styles
 
 When printing, EdibleCSS:
+
 - Converts to black/white
 - Shows link URLs after links
 - Hides navigation, forms, and media
@@ -312,6 +335,7 @@ When printing, EdibleCSS:
 EdibleCSS uses these design tokens (for advanced customization):
 
 ### Colors (Light Mode)
+
 - `--bg-primary`: #ffffff
 - `--bg-secondary`: #f6f8fa
 - `--bg-tertiary`: #e1e4e8
@@ -323,6 +347,7 @@ EdibleCSS uses these design tokens (for advanced customization):
 - `--button-bg-hover`: #0860ca
 
 ### Colors (Dark Mode)
+
 - `--bg-primary`: #0d1117
 - `--bg-secondary`: #161b22
 - `--bg-tertiary`: #21262d
@@ -334,6 +359,7 @@ EdibleCSS uses these design tokens (for advanced customization):
 - `--button-bg-hover`: #388bfd
 
 ### Typography Scale
+
 - `--font-sm`: 0.8rem
 - `--font-md`: 1rem
 - `--font-lg`: 1.25rem
@@ -343,6 +369,7 @@ EdibleCSS uses these design tokens (for advanced customization):
 - `--font-4xl`: 3.052rem
 
 ### Spacing Scale
+
 - `--space-xs`: 0.25rem (2px)
 - `--space-sm`: 0.5rem (4px)
 - `--space-md`: 1rem (8px)
@@ -353,6 +380,7 @@ EdibleCSS uses these design tokens (for advanced customization):
 ## Browser Support
 
 EdibleCSS supports:
+
 - Chrome/Edge (last 2 versions)
 - Firefox (last 2 versions)
 - Safari (last 2 versions)
@@ -361,4 +389,4 @@ EdibleCSS supports:
 
 **Current Version:** 0.1.0  
 **License:** MIT  
-**Repository:** https://github.com/svmukhin/edible-css
+**Repository:** <https://github.com/svmukhin/edible-css>

@@ -8,9 +8,12 @@
 
 ## Overview
 
-This guide will help you implement SPDX headers (for CSS, JS, HTML) and markdown linting for EdibleCSS in the correct order to avoid CI failures and ensure smooth integration.
+This guide will help you implement SPDX headers (for CSS, JS, HTML) and markdown
+linting for EdibleCSS in the correct order to avoid CI failures and ensure
+smooth integration.
 
-**Note**: Markdown files do NOT require SPDX headers per user clarification - covered by root LICENSE.txt.
+**Note**: Markdown files do NOT require SPDX headers per user clarification -
+covered by root LICENSE.txt.
 
 ---
 
@@ -21,12 +24,13 @@ This guide will help you implement SPDX headers (for CSS, JS, HTML) and markdown
 ```bash
 cd /home/mukhin/repos/edible-css
 npm install --save-dev markdownlint-cli2
-```
+```text
 
 **Verify**:
+
 ```bash
 npx markdownlint-cli2 --version
-```
+```text
 
 ### Step 1.2: Update markdownlint Configuration
 
@@ -47,7 +51,7 @@ config:
   MD041: false  # First line heading - disabled for SPDX headers
   MD024:  # Duplicate headings
     siblings_only: true
-```
+```text
 
 ### Step 1.3: Add npm Script
 
@@ -60,15 +64,16 @@ Edit `package.json`, add to `scripts` section:
     "lint:license": "reuse lint"
   }
 }
-```
+```text
 
 ### Step 1.4: Test Markdown Linting (Baseline)
 
 ```bash
 npm run lint:md
-```
+```text
 
-**Expected**: Likely failures due to MD041 (first-line-heading). This is OK - we'll fix after adding SPDX headers.
+**Expected**: Likely failures due to MD041 (first-line-heading). This is OK -
+we'll fix after adding SPDX headers.
 
 ---
 
@@ -78,7 +83,7 @@ npm run lint:md
 
 ```bash
 mkdir -p LICENSES
-```
+```text
 
 ### Step 2.2: Add MIT License Text
 
@@ -106,13 +111,13 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-```
+```text
 
 ### Step 2.3: Create DEP5 File
 
 Create `.reuse/dep5`:
 
-```
+```text
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: edible-css
 Upstream-Contact: Sergei Mukhin <contact@example.com>
@@ -121,9 +126,10 @@ Source: https://github.com/svmukhin/edible-css
 Files: dist/* package-lock.json test/backstop/test/* node_modules/* .gitignore package.json .markdownlint-cli2.yaml backstop.json test/backstop/backstop.json *.md docs/*.md specs/**/*.md
 Copyright: 2026 Sergei Mukhin
 License: MIT
-```
+```text
 
-**Important**: This includes `*.md docs/*.md specs/**/*.md` to cover all markdown files without SPDX headers.
+**Important**: This includes `*.md docs/*.md specs/**/*.md` to cover all
+markdown files without SPDX headers.
 
 ---
 
@@ -138,9 +144,10 @@ Add to **top of each file** in `src/`:
  * SPDX-FileCopyrightText: 2026 Sergei Mukhin
  * SPDX-License-Identifier: MIT
  */
-```
+```text
 
 **Files to modify**:
+
 - `src/base.css`
 - `src/dark-mode.css`
 - `src/edible.css`
@@ -156,6 +163,7 @@ Add to **top of each file** in `src/`:
 - `src/utilities.css`
 
 **Tip**: Use multi-file replace in VS Code:
+
 1. Search: `^` (start of file, regex mode)
 2. Replace: (paste CSS header + newline)
 3. Files to include: `src/*.css`
@@ -169,7 +177,7 @@ Add to **top** of `postcss.config.js`:
  * SPDX-FileCopyrightText: 2026 Sergei Mukhin
  * SPDX-License-Identifier: MIT
  */
-```
+```text
 
 ### Step 3.3: HTML Files (14 files)
 
@@ -180,9 +188,10 @@ Add to **top** of each HTML file:
   SPDX-FileCopyrightText: 2026 Sergei Mukhin
   SPDX-License-Identifier: MIT
 -->
-```
+```text
 
 **Files in docs/**:
+
 - `docs/index.html`
 - `docs/examples/basic.html`
 - `docs/examples/form.html`
@@ -191,6 +200,7 @@ Add to **top** of each HTML file:
 - `docs/examples/typography.html`
 
 **Files in test/samples/**:
+
 - `test/samples/code.html`
 - `test/samples/forms.html`
 - `test/samples/interactive.html`
@@ -209,7 +219,7 @@ Add to **top** of each HTML file:
 
 ```bash
 npm run lint:md
-```
+```text
 
 **Expected**: Should pass now with updated MD041 config and SPDX headers.
 
@@ -219,7 +229,7 @@ npm run lint:md
 pip install reuse
 # OR use Docker:
 # docker run --rm -v $(pwd):/repo fsfe/reuse:latest lint
-```
+```text
 
 ### Step 4.3: Test REUSE Compliance
 
@@ -227,10 +237,11 @@ pip install reuse
 reuse lint
 # OR
 npm run lint:license
-```
+```text
 
 **Expected Output**:
-```
+
+```text
 # SUMMARY
 
 * Bad licenses: 0
@@ -244,16 +255,17 @@ npm run lint:license
 * Files with license information: [number] / [number]
 
 Congratulations! Your project is compliant with version 3.0 of the REUSE Specification :-)
-```
+```text
 
 ### Step 4.4: Test Build (Ensure Headers Don't Break Minification)
 
 ```bash
 npm run build
 npm run minify
-```
+```text
 
-**Verify**: Check `dist/edible.min.css` - SPDX comments should be stripped or minimal.
+**Verify**: Check `dist/edible.min.css` - SPDX comments should be stripped or
+minimal.
 
 ---
 
@@ -263,7 +275,7 @@ npm run minify
 
 ```bash
 mkdir -p .github/workflows
-```
+```text
 
 ### Step 5.2: Create Compliance Workflow
 
@@ -300,7 +312,7 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v16
         with:
           globs: '**/*.md'
-```
+```text
 
 ### Step 5.3: Commit and Push
 
@@ -318,7 +330,7 @@ git commit -m "Add SPDX headers and markdown linting
 Closes #[issue-number] (if applicable)"
 
 git push origin 002-licensing-linting
-```
+```text
 
 ### Step 5.4: Verify CI
 
@@ -348,18 +360,21 @@ All source files (CSS, JavaScript, HTML, Markdown) must include SPDX headers at 
  * SPDX-FileCopyrightText: 2026 Sergei Mukhin
  * SPDX-License-Identifier: MIT
  */
-```
+```text
 
 **HTML/Markdown files**:
+
 ```html
 <!--
   SPDX-FileCopyrightText: 2026 Sergei Mukhin
   SPDX-License-Identifier: MIT
 -->
-```
+```text
 
-Configuration files (package.json, .yaml) are excluded. CI will fail if headers are missing.
-```
+Configuration files (package.json, .yaml) are excluded. CI will fail
+if headers are missing.
+
+```text
 
 ### Step 6.2: Add REUSE Badge (Optional)
 
@@ -367,7 +382,7 @@ Add to `README.md`:
 
 ```markdown
 [![REUSE status](https://api.reuse.software/badge/github.com/svmukhin/edible-css)](https://api.reuse.software/info/github.com/svmukhin/edible-css)
-```
+```text
 
 ---
 
@@ -381,7 +396,8 @@ Add to `README.md`:
 ### Issue: REUSE Lint Reports Missing Headers
 
 **Cause**: File not in `.gitignore` or DEP5  
-**Fix**: 
+**Fix**:
+
 - Add SPDX header if it's a source file
 - Add to `.reuse/dep5` if it's generated/config file
 - Add to `.gitignore` if it shouldn't be tracked
@@ -389,7 +405,8 @@ Add to `README.md`:
 ### Issue: Build Breaks After Adding Headers
 
 **Cause**: Unlikely, but check PostCSS config  
-**Fix**: CSS comments are valid, should not break build. Verify `postcss.config.js` syntax.
+**Fix**: CSS comments are valid, should not break build. Verify
+`postcss.config.js` syntax.
 
 ### Issue: GitHub Actions Workflow Not Running
 
@@ -421,7 +438,8 @@ After successful implementation:
 1. **Merge to main**: Create PR from `002-licensing-linting` to `main`
 2. **Monitor CI**: Ensure compliance checks run on future commits
 3. **Educate contributors**: Share SPDX header template in issues/PRs
-4. **Optional**: Add pre-commit hook for local validation (currently not required)
+4. **Optional**: Add pre-commit hook for local validation (currently not
+   required)
 
 ---
 

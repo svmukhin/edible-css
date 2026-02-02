@@ -1,15 +1,18 @@
 # EdibleCSS: "Just add HTML"
 
-A primitive, classless CSS framework for developers with no design skills. Style semantic HTML5 with a single `<link>` tag.
+A primitive, classless CSS framework for developers with no design skills. Style
+semantic HTML5 with a single `<link>` tag.
 
 ## Features
 
 - **Zero Classes** - Style pure HTML5 elements only, no CSS classes required
 - **No JavaScript** - Pure CSS solution with zero runtime dependencies
-- **Single Link Tag** - Just add `<link rel="stylesheet" href="edible.css">` and you're done
+- **Single Link Tag** - Just add `<link rel="stylesheet" href="edible.css">` and
+  you're done
 - **Responsive by Default** - Works on mobile, tablet, and desktop automatically
 - **Adaptive Dark Mode** - Automatic light/dark theme based on user preference
-- **Accessible** - WCAG 2.1 AA compliant with proper contrast and focus indicators
+- **Accessible** - WCAG 2.1 AA compliant with proper contrast and focus
+  indicators
 - **Tiny** - 24.8KB uncompressed, 3.8KB gzipped
 - **Modern Browsers** - Chrome, Firefox, Safari, Edge (last 2 versions)
 
@@ -46,8 +49,11 @@ Or link to `node_modules/edible-css/dist/edible.css` in your HTML.
 ### Download
 
 Download the CSS file directly from GitHub:
-- [edible.css](https://github.com/svmukhin/edible-css/raw/main/dist/edible.css) (24.8KB uncompressed)
-- [edible.min.css](https://github.com/svmukhin/edible-css/raw/main/dist/edible.min.css) (16KB minified)
+
+- [edible.css](https://github.com/svmukhin/edible-css/raw/main/dist/edible.css)
+  (24.8KB uncompressed)
+- [edible.min.css](https://github.com/svmukhin/edible-css/raw/main/dist/edible.min.css)
+  (16KB minified)
 
 Then include it in your project:
 
@@ -145,7 +151,8 @@ EdibleCSS styles 50+ HTML5 elements including:
 
 ## Dark Mode
 
-Dark mode works automatically based on your operating system or browser setting. No configuration needed.
+Dark mode works automatically based on your operating system or browser setting.
+No configuration needed.
 
 ```css
 /* Automatically switches when user enables dark mode */
@@ -167,9 +174,11 @@ Legacy browsers (IE11) are not supported.
 
 ## Customization
 
-EdibleCSS is intentionally **not customizable**. It provides one opinionated design that looks professional out of the box.
+EdibleCSS is intentionally **not customizable**. It provides one opinionated
+design that looks professional out of the box.
 
-If you need to override styles, EdibleCSS uses low-specificity element selectors, so your own CSS will take precedence:
+If you need to override styles, EdibleCSS uses low-specificity element
+selectors, so your own CSS will take precedence:
 
 ```css
 /* Your custom styles override EdibleCSS */
@@ -212,10 +221,13 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Contributing
 
-Contributions are welcome! However, please note that EdibleCSS is intentionally minimal and opinionated. New features must align with the [Constitution](.specify/memory/constitution.md) principles.
+Contributions are welcome! However, please note that EdibleCSS is
+intentionally minimal and opinionated. New features must align with the
+[Constitution](.specify/memory/constitution.md) principles.
 
 ## Credits
 
 Created by [Sergei Mukhin](https://github.com/svmukhin)
 
-Inspired by classless CSS frameworks: Tacit, Water.css, new.css, MVP.css, and sakura.
+Inspired by classless CSS frameworks: Tacit, Water.css, new.css, MVP.css, and
+sakura.
