@@ -16,7 +16,9 @@
     "test:visual:reference": "backstop reference --config=test/backstop/backstop.json",
     "test:a11y": "pa11y-ci test/samples/*.html",
     "serve:tests": "python3 -m http.server 8080",
-    "test": "npm run validate && npm run test:visual && npm run test:a11y"
+    "test": "npm run validate && npm run test:visual && npm run test:a11y",
+    "lint:md": "markdownlint-cli2 \"**/*.md\"",
+    "lint:license": "reuse lint"
   },
   "repository": {
     "type": "git",

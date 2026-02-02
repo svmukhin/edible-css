@@ -19,8 +19,8 @@
 
 **Purpose**: Install tooling and create REUSE-compliant directory structure
 
-- [ ] T001 Install markdownlint-cli2 npm package as dev dependency
-- [ ] T002 Add npm scripts to package.json: "lint:md" and "lint:license"
+- [X] T001 Install markdownlint-cli2 npm package as dev dependency
+- [X] T002 Add npm scripts to package.json: "lint:md" and "lint:license"
 - [ ] T003 [P] Create LICENSES/ directory with MIT.txt full license text
 - [ ] T004 [P] Create .reuse/ directory with dep5 file for generated/binary files
 - [ ] T005 [P] Update .markdownlint-cli2.yaml config: disable MD041, add MD024 siblings_only, add MD033 allowed_elements
