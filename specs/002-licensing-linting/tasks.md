@@ -23,7 +23,7 @@
 - [X] T002 Add npm scripts to package.json: "lint:md" and "lint:license"
 - [X] T003 [P] Create LICENSES/ directory with MIT.txt full license text
 - [X] T004 [P] Create .reuse/ directory with dep5 file for generated/binary files
-- [ ] T005 [P] Update .markdownlint-cli2.yaml config: disable MD041, add MD024 siblings_only, add MD033 allowed_elements
+- [X] T005 [P] Update .markdownlint-cli2.yaml config: disable MD041, add MD024 siblings_only, add MD033 allowed_elements
 
 **Checkpoint**: Infrastructure ready - REUSE structure exists, linting tools installed
 
