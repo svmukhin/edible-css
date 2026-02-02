@@ -1,0 +1,10 @@
+version = 1
+SPDX-PackageName = "edible-css"
+SPDX-PackageSupplier = "Sergei Mukhin <contact@example.com>"
+SPDX-PackageDownloadLocation = "https://github.com/svmukhin/edible-css"
+
+[[annotations]]
+path = ["dist/**", "package-lock.json", "test/backstop/test/**", "test/backstop/reference/**", "node_modules/**", ".gitignore", "package.json", ".markdownlint-cli2.yaml", "backstop.json", "test/backstop/backstop.json", "**.md", "docs/**.md", "specs/**/**.md", ".specify/scripts/bash/**.sh", ".vscode/settings.json"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 Sergei Mukhin"
+SPDX-License-Identifier = "MIT"
