@@ -146,24 +146,25 @@ with clear logs.
 
 ### GitHub Actions Workflow
 
-- [ ] T043 [US3] Create .github/workflows/ directory if it doesn't exist
-- [ ] T044 [US3] Create .github/workflows/compliance.yml with two jobs:
-      reuse-compliance and markdown-lint
-- [ ] T045 [US3] Configure reuse-compliance job to use fsfe/reuse-action@v6
-- [ ] T046 [US3] Configure markdown-lint job to use
-      DavidAnson/markdownlint-cli2-action@v16 with globs: '\*_/_.md'
-- [ ] T047 [US3] Set workflow triggers: on push to all branches and PR to main
+- [x] T043 [US3] Create .github/workflows/ directory if it doesn't exist
+- [x] T044 [US3] Create three separate workflow files: reuse.yml,
+      markdown-lint.yml, and yamllint.yml (instead of single compliance.yml)
+- [x] T045 [US3] Configure reuse.yml job to use fsfe/reuse-action@v6
+- [x] T046 [US3] Configure markdown-lint.yml job to use
+      DavidAnson/markdownlint-cli2-action@v22 with config file
+- [x] T047 [US3] Set workflow triggers: on push/PR to master branch, added
+      concurrency groups and timeouts
 
 ### CI Validation
 
-- [ ] T048 [US3] Commit and push compliance.yml to trigger first CI run
-- [ ] T049 [US3] Verify both CI jobs (reuse-compliance and markdown-lint) pass
-      in GitHub Actions
-- [ ] T050 [US3] Test CI failure: temporarily remove SPDX header from one file,
+- [x] T048 [US3] Commit and push workflow files to trigger first CI run
+- [x] T049 [US3] Verify all CI jobs (reuse, markdown-lint, yamllint) pass in
+      GitHub Actions
+- [x] T050 [US3] Test CI failure: temporarily remove SPDX header from one file,
       push, verify CI fails
-- [ ] T051 [US3] Test CI failure: introduce markdown error, push, verify
+- [x] T051 [US3] Test CI failure: introduce markdown error, push, verify
       markdown-lint job fails
-- [ ] T052 [US3] Restore files and verify CI passes again
+- [x] T052 [US3] Restore files and verify CI passes again
 
 **Checkpoint**: At this point, User Story 3 is complete - CI automatically
 enforces compliance on every commit
@@ -178,14 +179,14 @@ enforces compliance on every commit
 status](https://api.reuse.software/badge/github.com/svmukhin/edible-css)](https://api.reuse.software/info/github.com/svmukhin/edible-css)
 - [ ] T054 [P] Add SPDX header examples to CONTRIBUTING.md or README.md for new
       contributors
-- [ ] T055 Run complete test suite: npm run build && npm run minify && npm run
+- [x] T055 Run complete test suite: npm run build && npm run minify && npm run
       test (visual + a11y)
-- [ ] T056 Verify dist/edible.min.css size is similar to pre-SPDX size (headers
+- [x] T056 Verify dist/edible.min.css size is similar to pre-SPDX size (headers
       stripped)
-- [ ] T057 Run quickstart.md validation: follow guide step-by-step to ensure
+- [x] T057 Run quickstart.md validation: follow guide step-by-step to ensure
       accuracy
-- [ ] T058 Final reuse lint check: verify 100% compliance message
-- [ ] T059 Final markdown lint check: npm run lint:md with zero errors
+- [x] T058 Final reuse lint check: verify 100% compliance message
+- [x] T059 Final markdown lint check: npm run lint:md with zero errors
 
 ---
 
