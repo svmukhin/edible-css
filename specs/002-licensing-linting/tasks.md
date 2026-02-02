@@ -87,9 +87,9 @@
 ### Validation for User Story 1
 
 - [X] T035 [US1] Run npm run build to verify CSS headers don't break compilation
-- [ ] T036 [US1] Run npm run minify to verify headers are stripped in production build
-- [ ] T037 [US1] Install reuse tool (pip install reuse) and run reuse lint to verify compliance
-- [ ] T038 [US1] Verify reuse lint reports zero errors and 100% compliance
+- [X] T036 [US1] Run npm run minify to verify headers are stripped in production build
+- [X] T037 [US1] Install reuse tool (uv tool install reuse), convert .reuse/dep5 to REUSE.toml (reuse convert-dep5), run reuse lint to verify compliance
+- [X] T038 [US1] Verify reuse lint reports zero errors and 100% compliance (109/109 files)
 
 **Checkpoint**: At this point, User Story 1 is complete - all source code files have SPDX headers, REUSE compliance achieved
 
