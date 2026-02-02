@@ -1,4 +1,9 @@
-/*\n * SPDX-FileCopyrightText: 2026 Sergei Mukhin\n * SPDX-License-Identifier: MIT\n */\n\nmodule.exports = {
+/*
+ * SPDX-FileCopyrightText: 2026 Sergei Mukhin
+ * SPDX-License-Identifier: MIT
+ */
+
+module.exports = {
   plugins: [
     require('postcss-import'),
     require('autoprefixer')
