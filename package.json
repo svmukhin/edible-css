@@ -41,6 +41,7 @@
     "axe-core": "^4.10.2",
     "backstopjs": "^6.3.25",
     "cssnano": "^7.1.2",
+    "markdownlint-cli2": "^0.20.0",
     "pa11y": "^8.0.0",
     "pa11y-ci": "^4.0.1",
     "postcss": "^8.4.49",
