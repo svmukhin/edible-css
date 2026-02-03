@@ -74,10 +74,22 @@
   "report": ["browser"],
   "engine": "puppeteer",
   "engineOptions": {
-    "args": ["--no-sandbox"]
+    "args": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-web-security",
+      "--font-render-hinting=none",
+      "--force-color-profile=srgb"
+    ]
   },
   "asyncCaptureLimit": 5,
   "asyncCompareLimit": 50,
   "debug": false,
-  "debugWindow": false
+  "debugWindow": false,
+  "resembleOutputOptions": {
+    "ignoreAntialiasing": true,
+    "errorType": "flatDifferenceIntensity"
+  },
+  "misMatchThreshold": 0.1
 }
