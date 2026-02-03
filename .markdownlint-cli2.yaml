@@ -3,8 +3,7 @@
 ---
 gitignore: true
 ignores:
-  - .github/agents
-  - .specify/templates
+  - CHANGELOG.md
 
 config:
   MD013:
