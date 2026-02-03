@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/svmukhin/edible-css/compare/v1.0.0...v1.0.1) (2026-02-03)
+
+
+### Bug Fixes
+
+* configure CI/CD workflows ([c428b18](https://github.com/svmukhin/edible-css/commit/c428b18ea30bf56161d8f195ee46c7b5cc0a02f4))
+
 ## 1.0.0 (2026-02-03)
 
 
