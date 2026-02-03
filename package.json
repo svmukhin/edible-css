@@ -1,9 +1,12 @@
 {
-  "name": "edible-css",
+  "name": "@svmukhin/edible-css",
   "version": "0.2.0",
   "description": "A primitive, classless CSS framework for developers with no design skills. Style semantic HTML5 with a single <link> tag.",
   "main": "dist/edible.css",
   "style": "dist/edible.css",
+  "publishConfig": {
+    "access": "public"
+  },
   "files": [
     "dist/edible.css",
     "dist/edible.min.css"
