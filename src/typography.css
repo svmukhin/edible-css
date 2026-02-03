@@ -3,9 +3,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-/* Typography Styles */
-
-/* Headings */
 h1,
 h2,
 h3,
@@ -19,7 +16,6 @@ h6 {
   margin-bottom: var(--space-md);
 }
 
-/* First heading has no top margin */
 h1:first-child,
 h2:first-child,
 h3:first-child,
@@ -54,7 +50,6 @@ h6 {
   font-weight: 600;
 }
 
-/* Paragraphs */
 p {
   margin-bottom: var(--space-md);
   line-height: 1.6;
@@ -64,7 +59,6 @@ p:last-child {
   margin-bottom: 0;
 }
 
-/* Links */
 a {
   color: var(--accent);
   text-decoration: underline;
@@ -82,7 +76,6 @@ a:focus {
   outline-offset: 2px;
 }
 
-/* Text Formatting Elements */
 strong,
 b {
   font-weight: 700;
@@ -139,7 +132,6 @@ sup {
   top: -0.5em;
 }
 
-/* Code and Preformatted Text */
 code,
 kbd,
 samp,
@@ -174,7 +166,6 @@ kbd {
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Blockquotes */
 blockquote {
   margin: var(--space-md) 0;
   padding-left: var(--space-md);
@@ -192,7 +183,6 @@ cite {
   color: var(--text-secondary);
 }
 
-/* Abbreviations and Time */
 abbr[title] {
   text-decoration: underline dotted;
   cursor: help;

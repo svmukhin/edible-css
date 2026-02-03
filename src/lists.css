@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-/* Unordered and Ordered Lists */
 ul,
 ol {
   margin: var(--space-md) 0;
@@ -23,7 +22,6 @@ li {
   line-height: 1.6;
 }
 
-/* Nested lists */
 ul ul,
 ol ul {
   list-style-type: circle;
@@ -46,14 +44,12 @@ ul ol ol {
   list-style-type: lower-roman;
 }
 
-/* Remove default margin for nested lists */
 li > ul,
 li > ol {
   margin-top: var(--space-xs);
   margin-bottom: 0;
 }
 
-/* Description Lists */
 dl {
   margin: var(--space-md) 0;
 }

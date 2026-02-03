@@ -9,30 +9,15 @@
  * https://github.com/svmukhin/edible-css
  */
 
-/* Foundation */
 @import 'reset.css';
 @import 'tokens.css';
 @import 'base.css';
-
-/* Typography & Content */
 @import 'typography.css';
 @import 'lists.css';
 @import 'tables.css';
-
-/* Forms */
 @import 'forms.css';
-
-/* Media */
 @import 'media.css';
-
-/* Semantic Elements */
 @import 'semantic.css';
-
-/* Utilities */
 @import 'utilities.css';
-
-/* Dark Mode */
 @import 'dark-mode.css';
-
-/* Print Styles */
 @import 'print.css';

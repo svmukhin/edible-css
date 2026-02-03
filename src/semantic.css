@@ -3,9 +3,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-/* Semantic HTML5 Elements */
-
-/* Navigation */
 nav {
   background-color: var(--bg-secondary);
   padding: var(--space-md);
@@ -44,13 +41,11 @@ nav a:focus {
   outline-offset: 2px;
 }
 
-/* Main Content */
 main {
   display: block;
   margin: var(--space-lg) 0;
 }
 
-/* Article */
 article {
   margin: var(--space-xl) 0;
   padding: var(--space-lg);
@@ -63,7 +58,6 @@ article:first-child {
   margin-top: 0;
 }
 
-/* Aside - Supplementary Content */
 aside {
   margin: var(--space-lg) 0;
   padding: var(--space-md);
@@ -73,7 +67,6 @@ aside {
   color: var(--text-secondary);
 }
 
-/* Section */
 section {
   margin: var(--space-xl) 0;
 }
@@ -82,14 +75,12 @@ section:first-child {
   margin-top: 0;
 }
 
-/* Header */
 header {
   margin: 0 0 var(--space-lg) 0;
   padding-bottom: var(--space-md);
   border-bottom: 1px solid var(--border);
 }
 
-/* Footer */
 footer {
   margin: var(--space-lg) 0 0 0;
   padding-top: var(--space-md);
@@ -98,14 +89,12 @@ footer {
   font-size: 0.9em;
 }
 
-/* Address */
 address {
   font-style: italic;
   margin: var(--space-md) 0;
   color: var(--text-secondary);
 }
 
-/* Inline Quotes */
 q {
   font-style: italic;
   quotes: '"' '"' "'" "'";
@@ -119,7 +108,6 @@ q::after {
   content: close-quote;
 }
 
-/* Details and Summary */
 details {
   margin: var(--space-md) 0;
   padding: var(--space-md);
@@ -151,7 +139,6 @@ details[open] summary {
   border-bottom: 1px solid var(--border);
 }
 
-/* Dialog */
 dialog {
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -164,7 +151,6 @@ dialog::backdrop {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Progress and Meter */
 progress,
 meter {
   display: block;
@@ -223,7 +209,6 @@ meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
   background-color: #cf222e;
 }
 
-/* Output Element */
 output {
   display: inline-block;
   padding: var(--space-xs) var(--space-sm);
@@ -234,12 +219,10 @@ output {
   font-size: 0.875em;
 }
 
-/* Template Element */
 template {
   display: none;
 }
 
-/* Figure and Figcaption */
 figure {
   margin: var(--space-md) 0;
   text-align: center;

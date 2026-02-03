@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-/* Tables */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -46,7 +45,6 @@ td {
   color: var(--text-primary);
 }
 
-/* Alignment variants */
 th[align="center"],
 td[align="center"] {
   text-align: center;

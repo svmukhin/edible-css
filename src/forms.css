@@ -3,7 +3,6 @@
  * SPDX-License-Identifier: MIT
  */
 
-/* Text Inputs and Textarea */
 input[type="text"],
 input[type="email"],
 input[type="password"],
@@ -72,7 +71,6 @@ textarea {
   resize: vertical;
 }
 
-/* Disabled and readonly states */
 input[type="text"]:disabled,
 input[type="email"]:disabled,
 input[type="password"]:disabled,
@@ -99,7 +97,6 @@ textarea:read-only {
   opacity: 0.6;
 }
 
-/* Select Dropdowns */
 select {
   display: block;
   width: 100%;
@@ -142,7 +139,6 @@ option {
   padding: var(--space-xs);
 }
 
-/* Buttons */
 button,
 input[type="submit"],
 input[type="button"],
@@ -207,7 +203,6 @@ input[type="reset"]:active:not(:disabled) {
   transform: translateY(1px);
 }
 
-/* Checkboxes and Radio Buttons */
 input[type="checkbox"],
 input[type="radio"] {
   width: 1.125rem;
@@ -230,7 +225,6 @@ input[type="radio"]:focus {
   outline-offset: 2px;
 }
 
-/* Fieldset and Legend */
 fieldset {
   border: 1px solid var(--border);
   border-radius: 4px;
@@ -244,7 +238,6 @@ legend {
   color: var(--text-primary);
 }
 
-/* Labels */
 label {
   display: inline-block;
   margin-bottom: var(--space-xs);
