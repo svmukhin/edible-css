@@ -29,22 +29,22 @@ Add this line to your HTML `<head>`:
 Or via unpkg:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/edible-css@latest/dist/edible.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.min.css">
 ```
 
 ### npm
 
 ```bash
-npm install edible-css
+npm install @svmukhin/edible-css
 ```
 
 Then import in your CSS or JavaScript:
 
 ```css
-@import 'edible-css/dist/edible.css';
+@import '@svmukhin/edible-css/dist/edible.css';
 ```
 
-Or link to `node_modules/edible-css/dist/edible.css` in your HTML.
+Or link to `node_modules/@svmukhin/edible-css/dist/edible.css` in your HTML.
 
 ### Download
 
@@ -72,7 +72,7 @@ Then include it in your project:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Page</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.min.css">
 </head>
 <body>
   <header>
@@ -224,6 +224,40 @@ MIT License - see [LICENSE](LICENSE) for details.
 Contributions are welcome! However, please note that EdibleCSS is
 intentionally minimal and opinionated. New features must align with the
 [Constitution](.specify/memory/constitution.md) principles.
+
+### Commit Message Format
+
+This project uses [Conventional Commits](https://www.conventionalcommits.org/)
+for automated versioning and changelog generation. Please format your commit
+messages as:
+
+```text
+<type>(<scope>): <description>
+
+[optional body]
+[optional footer]
+```
+
+**Types:**
+
+- `feat:` - New feature (bumps minor version)
+- `fix:` - Bug fix (bumps patch version)
+- `docs:` - Documentation only changes
+- `style:` - Code style changes (formatting, missing semi-colons, etc)
+- `refactor:` - Code refactoring
+- `test:` - Adding or updating tests
+- `chore:` - Maintenance tasks
+
+**Examples:**
+
+```bash
+git commit -m "feat: add print stylesheet"
+git commit -m "fix(forms): correct input border radius"
+git commit -m "docs: update CDN installation instructions"
+```
+
+For breaking changes, add `!` after the type or include `BREAKING CHANGE:` in
+the footer to bump the major version.
 
 ## Credits
 

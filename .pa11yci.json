@@ -1,0 +1,14 @@
+{
+  "defaults": {
+    "chromeLaunchConfig": {
+      "args": [
+        "--no-sandbox",
+        "--disable-setuid-sandbox",
+        "--disable-dev-shm-usage",
+        "--disable-web-security"
+      ]
+    },
+    "timeout": 30000,
+    "wait": 1000
+  }
+}
