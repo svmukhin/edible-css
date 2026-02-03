@@ -18,6 +18,7 @@ path = [
   ".markdownlint-cli2.yaml",
   "backstop.json",
   "test/backstop/backstop.json",
+  ".pa11yci.json",
   "**.md",
   "docs/**.md",
 ]
