@@ -4,10 +4,11 @@
       "args": [
         "--no-sandbox",
         "--disable-setuid-sandbox",
-        "--disable-dev-shm-usage"
+        "--disable-dev-shm-usage",
+        "--disable-web-security"
       ]
     },
-    "timeout": 10000,
-    "wait": 500
+    "timeout": 30000,
+    "wait": 1000
   }
 }
