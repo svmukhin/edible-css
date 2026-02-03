@@ -1,18 +1,3 @@
-<!--
-Sync Impact Report:
-- Version change: 1.0.0 → 1.1.0
-- Sections added: Immutable Laws, Decision Framework, Success Metrics
-- Core principles unchanged (Zero Classes, No JavaScript, Minimal Configuration,
-  For Non-Designers)
-- Enhanced governance with decision framework and success indicators
-- Templates status:
-✅ plan-template.md - compatible, decision framework reinforces constitution
-check gates
-  ✅ spec-template.md - compatible, success criteria align with success metrics
-  ✅ tasks-template.md - compatible, immutable laws enforce task constraints
-- Follow-up: None - all guidance integrated seamlessly
--->
-
 # EdibleCSS Constitution
 
 ## Core Principles

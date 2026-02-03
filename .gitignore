@@ -1,26 +1,3 @@
-# Speckit: Agent-Generated Context Files
-# These are temporary files generated during agent runs and should be regenerated
-.specify/memory/agent-context.md
-.specify/memory/context-*.md
-.specify/memory/*-context.md
-
-# Speckit: Temporary Working Files
-.specify/tmp/
-.specify/temp/
-*.tmp
-*.temp
-
-# Keep these speckit files:
-# - .specify/memory/constitution.md (REQUIRED - project constitution)
-# - .specify/templates/ (REQUIRED - all templates)
-# - .specify/scripts/ (REQUIRED - automation scripts)
-# - specs/**/spec.md (REQUIRED - feature specifications)
-# - specs/**/plan.md (generated but committed)
-# - specs/**/research.md (generated but committed)
-# - specs/**/data-model.md (generated but committed)
-# - specs/**/tasks.md (generated but committed)
-# - specs/**/checklists/ (generated but committed)
-
 # OS-specific Files
 .DS_Store
 .DS_Store?
