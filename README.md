@@ -29,22 +29,22 @@ Add this line to your HTML `<head>`:
 Or via unpkg:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/edible-css@latest/dist/edible.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.min.css">
 ```
 
 ### npm
 
 ```bash
-npm install edible-css
+npm install @svmukhin/edible-css
 ```
 
 Then import in your CSS or JavaScript:
 
 ```css
-@import 'edible-css/dist/edible.css';
+@import '@svmukhin/edible-css/dist/edible.css';
 ```
 
-Or link to `node_modules/edible-css/dist/edible.css` in your HTML.
+Or link to `node_modules/@svmukhin/edible-css/dist/edible.css` in your HTML.
 
 ### Download
 
@@ -72,7 +72,7 @@ Then include it in your project:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Page</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.min.css">
 </head>
 <body>
   <header>
