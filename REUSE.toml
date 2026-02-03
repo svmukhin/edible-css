@@ -20,9 +20,6 @@ path = [
   "test/backstop/backstop.json",
   "**.md",
   "docs/**.md",
-  "specs/**/**.md",
-  ".specify/scripts/bash/**.sh",
-  ".vscode/settings.json"
 ]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2026 Sergei Mukhin"
