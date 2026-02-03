@@ -225,6 +225,38 @@ Contributions are welcome! However, please note that EdibleCSS is
 intentionally minimal and opinionated. New features must align with the
 [Constitution](.specify/memory/constitution.md) principles.
 
+### Commit Message Format
+
+This project uses [Conventional Commits](https://www.conventionalcommits.org/)
+for automated versioning and changelog generation. Please format your commit
+messages as:
+
+```
+<type>(<scope>): <description>
+
+[optional body]
+[optional footer]
+```
+
+**Types:**
+- `feat:` - New feature (bumps minor version)
+- `fix:` - Bug fix (bumps patch version)
+- `docs:` - Documentation only changes
+- `style:` - Code style changes (formatting, missing semi-colons, etc)
+- `refactor:` - Code refactoring
+- `test:` - Adding or updating tests
+- `chore:` - Maintenance tasks
+
+**Examples:**
+```bash
+git commit -m "feat: add print stylesheet"
+git commit -m "fix(forms): correct input border radius"
+git commit -m "docs: update CDN installation instructions"
+```
+
+For breaking changes, add `!` after the type or include `BREAKING CHANGE:` in
+the footer to bump the major version.
+
 ## Credits
 
 Created by [Sergei Mukhin](https://github.com/svmukhin)
