@@ -4,7 +4,7 @@
 **Created**: 2026-02-01  
 **Status**: Draft  
 **Input**: User description: "SPDX headers in all source files:
-SPDX-FileCopyrightText and SPDX-License-Identifier. Use markdownlint-cli2 for
+SPDX- FileCopyrightText and SPDX- License-Identifier. Use markdownlint-cli2 for
 linting markdown files"
 
 ## Clarifications
@@ -46,11 +46,11 @@ identifier.
 **Acceptance Scenarios**:
 
 1. **Given** a CSS source file (e.g., `src/edible.css`), **When** a developer
-   opens it, **Then** the file contains `SPDX-FileCopyrightText: 2026 Sergei
-   Mukhin` and `SPDX-License-Identifier: MIT` in a comment block at the top.
+   opens it, **Then** the file contains `SPDX- FileCopyrightText: 2026 Sergei
+   Mukhin` and `SPDX- License-Identifier: MIT` in a comment block at the top.
 2. **Given** an HTML file (e.g., `docs/index.html`), **When** inspected,
    **Then** the file contains SPDX headers in HTML comment format `<!--
-   SPDX-FileCopyrightText: ... -->`.
+   SPDX- FileCopyrightText: ... -->`.
 3. **Given** a JavaScript source file (e.g., `postcss.config.js`), **When**
    viewed, **Then** the file contains SPDX headers in JS comment format at the
    top (configuration JSON/YAML files are excluded from SPDX requirements).
@@ -126,7 +126,7 @@ and verify 100% of files are compliant or properly excluded.
   - **Answer**: Exclude from SPDX requirements via `.gitignore`. Generated files
     inherit source file licenses.
 - What if a file has multiple copyright holders (e.g., external contributions)?
-  - **Answer**: Multiple `SPDX-FileCopyrightText` lines are allowed: one per
+  - **Answer**: Multiple `SPDX- FileCopyrightText` lines are allowed: one per
     copyright holder.
 - How are markdown files handled for licensing?
   - **Answer**: Markdown files are excluded from SPDX header requirements. They
@@ -147,8 +147,8 @@ and verify 100% of files are compliant or properly excluded.
 - **FR-002**: Configuration files (JSON, YAML, etc.) and markdown documentation
   files are excluded from SPDX header requirements.
 - **FR-003**: SPDX headers MUST include two required lines:
-  - `SPDX-FileCopyrightText: <year> <copyright holder>`
-  - `SPDX-License-Identifier: <SPDX-license-expression>`
+  - `SPDX- FileCopyrightText: <year> <copyright holder>`
+  - `SPDX- License-Identifier: <SPDX- license-expression>`
 - **FR-004**: Copyright year MUST match the year of file creation (or range for
   multi-year modifications).
 - **FR-005**: License identifier MUST be `MIT` (matching `LICENSE.txt` in
@@ -178,13 +178,13 @@ and verify 100% of files are compliant or properly excluded.
 
 - Format: Comment block at top of file
 - Required fields:
-  - `SPDX-FileCopyrightText`: Copyright year and holder(s)
-  - `SPDX-License-Identifier`: SPDX license expression (MIT)
+  - `SPDX- FileCopyrightText`: Copyright year and holder(s)
+  - `SPDX- License-Identifier`: SPDX license expression (MIT)
 - Syntax variations:
-  - CSS/JS: `/* SPDX-FileCopyrightText: ... */`
-  - Markdown: `<!-- SPDX-FileCopyrightText: ... -->`
-  - Shell/YAML: `# SPDX-FileCopyrightText: ...`
-  - HTML: `<!-- SPDX-FileCopyrightText: ... -->`
+  - CSS/JS: `/* SPDX- FileCopyrightText: ... */`
+  - Markdown: `<!-- SPDX- FileCopyrightText: ... -->`
+  - Shell/YAML: `# SPDX- FileCopyrightText: ...`
+  - HTML: `<!-- SPDX- FileCopyrightText: ... -->`
 
 **Markdownlint Configuration**:
 

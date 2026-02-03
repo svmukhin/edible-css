@@ -16,10 +16,10 @@ and Markdown files according to REUSE.software specification v3.0?
 **REUSE Specification v3.0 Requirements**:
 
 - Headers must appear at the top of files (within first few lines)
-- Two required tags: `SPDX-FileCopyrightText` and `SPDX-License-Identifier`
-- Format: `SPDX-FileCopyrightText: [year] [copyright holder]`
-- License: `SPDX-License-Identifier: MIT`
-- Multiple copyright holders allowed with multiple `SPDX-FileCopyrightText`
+- Two required tags: `SPDX-FileCopyrightText` and `SPDX -License-Identifier`
+- Format: `SPDX -FileCopyrightText: [year] [copyright holder]`
+- License: `SPDX -License-Identifier: MIT`
+- Multiple copyright holders allowed with multiple `SPDX -FileCopyrightText`
   lines
 
 **File-Specific Formats**:
@@ -61,7 +61,7 @@ appearance.
 
 **Alternatives Considered**:
 
-- Single-line format (`// SPDX-FileCopyrightText:...`) - Rejected: Less
+- Single-line format (`// SPDX -FileCopyrightText:...`) - Rejected: Less
   readable, not supported in all file types
 - Inline at end of file - Rejected: REUSE spec requires headers at top
 - DEP5 file only - Rejected: Doesn't meet requirement for inline headers in
