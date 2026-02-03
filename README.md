@@ -231,7 +231,7 @@ This project uses [Conventional Commits](https://www.conventionalcommits.org/)
 for automated versioning and changelog generation. Please format your commit
 messages as:
 
-```
+```text
 <type>(<scope>): <description>
 
 [optional body]
@@ -239,6 +239,7 @@ messages as:
 ```
 
 **Types:**
+
 - `feat:` - New feature (bumps minor version)
 - `fix:` - Bug fix (bumps patch version)
 - `docs:` - Documentation only changes
@@ -248,6 +249,7 @@ messages as:
 - `chore:` - Maintenance tasks
 
 **Examples:**
+
 ```bash
 git commit -m "feat: add print stylesheet"
 git commit -m "fix(forms): correct input border radius"
