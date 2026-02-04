@@ -277,7 +277,7 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 Contributions are welcome! However, please note that EdibleCSS is
 intentionally minimal and opinionated. New features must align with the
-[Constitution](.specify/memory/constitution.md) principles.
+[Constitution](docs/constitution.md) principles.
 
 ### Commit Message Format
 
