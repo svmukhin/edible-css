@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.4](https://github.com/svmukhin/edible-css/compare/v1.0.3...v1.0.4) (2026-02-04)
+
+
+### Bug Fixes
+
+* fixed download links to use unpkg CDN instead of GitHub raw ([8284b8a](https://github.com/svmukhin/edible-css/commit/8284b8af5d294f8f69423ede150518365b7c654a))
+* fixed jsdelivr CDN link to use npm package instead of GitHub repository ([322c248](https://github.com/svmukhin/edible-css/commit/322c24839836f91427935e1ae7e91386b23ab85c))
+
 ## [1.0.3](https://github.com/svmukhin/edible-css/compare/v1.0.2...v1.0.3) (2026-02-04)
 
 
