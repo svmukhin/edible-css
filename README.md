@@ -25,7 +25,7 @@ Add this line to your HTML `<head>`:
 ```html
 <link
   rel="stylesheet"
-  href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css"
+  href="https://cdn.jsdelivr.net/npm/@svmukhin/edible-css@latest/dist/edible.min.css"
 />
 ```
 
