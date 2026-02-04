@@ -54,11 +54,11 @@ Or link to `node_modules/@svmukhin/edible-css/dist/edible.css` in your HTML.
 
 ### Download
 
-Download the CSS file directly from GitHub:
+Download the CSS file directly from CDN:
 
-- [edible.css](https://github.com/svmukhin/edible-css/raw/main/dist/edible.css)
+- [edible.css](https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.css)
   (24.8KB uncompressed)
-- [edible.min.css](https://github.com/svmukhin/edible-css/raw/main/dist/edible.min.css)
+- [edible.min.css](https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.min.css)
   (16KB minified)
 
 Then include it in your project:
