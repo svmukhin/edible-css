@@ -21,7 +21,9 @@
     "serve:tests": "python3 -m http.server 8080",
     "test": "npm run validate && npm run test:visual && npm run test:a11y",
     "lint:md": "markdownlint-cli2 \"**/*.md\"",
-    "lint:license": "reuse lint"
+    "lint:license": "reuse lint",
+    "predeploy": "npm run build && npm run minify",
+    "deploy": "gh-pages -d docs -m 'Deploy documentation [ci skip]'"
   },
   "repository": {
     "type": "git",
@@ -40,7 +42,7 @@
   "bugs": {
     "url": "https://github.com/svmukhin/edible-css/issues"
   },
-  "homepage": "https://github.com/svmukhin/edible-css#readme",
+  "homepage": "https://svmukhin.github.io/edible-css/",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "axe-core": "^4.10.2",
