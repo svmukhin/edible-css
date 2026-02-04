@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/svmukhin/edible-css/compare/v1.0.2...v1.0.3) (2026-02-04)
+
+
+### Bug Fixes
+
+* using gh-pages -r option to pass the authenticated repo URL ([5199824](https://github.com/svmukhin/edible-css/commit/5199824ef9f53a11ca7ad38a4c116e7fb6e8c7f0))
+
 ## [1.0.2](https://github.com/svmukhin/edible-css/compare/v1.0.1...v1.0.2) (2026-02-04)
 
 
