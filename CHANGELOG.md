@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/svmukhin/edible-css/compare/v1.0.4...v1.0.5) (2026-02-04)
+
+
+### Bug Fixes
+
+* rewrite index.html ([a6d1b95](https://github.com/svmukhin/edible-css/commit/a6d1b9531397ce5b1d6d23fd3b0c98dece90bc27))
+
 ## [1.0.4](https://github.com/svmukhin/edible-css/compare/v1.0.3...v1.0.4) (2026-02-04)
 
 
