@@ -1,0 +1,27 @@
+# SPDX-FileCopyrightText: 2026 Sergei Mukhin
+# SPDX-License-Identifier: MIT
+
+# Source files (only publish dist/)
+src/
+
+# Tests
+test/
+
+# Documentation (keep README.md)
+docs/
+
+# Development files
+.github/
+.git/
+.gitignore
+.specify/
+.markdownlint-cli2.yaml
+postcss.config.js
+REUSE.toml
+
+# Dependencies
+node_modules/
+
+# Misc
+*.log
+.DS_Store
