@@ -29,10 +29,6 @@
       <h1>EdibleCSS</h1>
       <p>A primitive, classless CSS framework for developers with no design skills.</p>
       <p><strong>Just add HTML.</strong></p>
-      <p>
-        <a href="https://github.com/svmukhin/edible-css/archive/refs/heads/main.zip">Download v0.1.0</a> · 
-        <a href="https://github.com/svmukhin/edible-css">View on GitHub</a>
-      </p>
     </section>
 
     <article id="about">
@@ -61,50 +57,40 @@
       <h2>Installation</h2>
       <p>Choose your preferred installation method:</p>
 
-      <div class="installation-options">
-        <section>
-          <h3>CDN (Recommended)</h3>
-          <p>The fastest way to get started. Add one line to your HTML:</p>
-          <div class="code-block">
-            <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css"&gt;</code></pre>
-          </div>
-          <p>Or use unpkg:</p>
-          <div class="code-block">
-            <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/edible-css@latest/dist/edible.min.css"&gt;</code></pre>
-          </div>
-        </section>
-
-        <section>
-          <h3>NPM</h3>
-          <p>Install via npm for use in build processes:</p>
-          <div class="code-block">
-       h3>CDN (Recommended)</h3>
+      <h3>CDN (Recommended)</h3>
       <p>The fastest way to get started. Add one line to your HTML:</p>
-      <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css"&gt;</code></pre>
+      <pre><code>&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@svmukhin/edible-css@latest/dist/edible.min.css"&gt;</code></pre>
       <p>Or use unpkg:</p>
-      <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/edible-css@latest/dist/edible.min.css"&gt;</code></pre>
+      <pre><code>&lt;link rel="stylesheet" href="https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.min.css"&gt;</code></pre>
 
       <h3>NPM</h3>
       <p>Install via npm for use in build processes:</p>
-      <pre><code>npm install edible-css</code></pre>
+      <pre><code>npm install @svmukhin/edible-css</code></pre>
       <p>Then import in your CSS or JavaScript:</p>
-      <pre><code>@import 'edible-css/dist/edible.css';</code></pre>
+      <pre><code>@import '@svmukhin/edible-css/dist/edible.css';</code></pre>
 
       <h3>Download</h3>
-      <p>Download the CSS file directly and host it yourself:</p>
+      <p>Download the CSS file directly from CDN:</p>
       <ul>
-        <li><a href="https://github.com/svmukhin/edible-css/raw/main/dist/edible.css">edible.css</a> (24 KB uncompressed)</li>
-        <li><a href="https://github.com/svmukhin/edible-css/raw/main/dist/edible.min.css">edible.min.css</a> (16 KB minified)</li>
-      </ul <p>This is a blockquote. It's great for emphasizing important quotes or notes.</p>
-          </blockquote>
-        </div>
-      </section>
+        <li><a href="https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.css">edible.css</a> (24 KB uncompressed)</li>
+        <li><a href="https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.min.css">edible.min.css</a> (16 KB minified)</li>
+      </ul>
+    </article>
 
-      <section>
-        <h3>Form Example</h3>
-        <form>
-          <label for="name">Name:</label>
-          <input type="text" id="name" placeholder="Enter your name">
+    <article>
+      <h2>Live Demo</h2>
+      <p>This page itself demonstrates EdibleCSS. Everything you see is styled with zero CSS classes.</p>
+
+      <h3>Typography Example</h3>
+      <p>This is a paragraph with <strong>bold text</strong>, <em>italic text</em>, and <mark>highlighted text</mark>.</p>
+      <blockquote>
+        <p>This is a blockquote. It's great for emphasizing important quotes or notes.</p>
+      </blockquote>
+
+      <h3>Form Example</h3>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
 
           <label for="email">Email:</label>
           <input type="email" id="email" placeholder="you@example.com">
@@ -119,11 +105,9 @@
 
           <button type="submit">Submit</button>
         </form>
-      </section>
 
-      <section>
-        <h3>Table Example</h3>
-        <table>
+      <h3>Table Example</h3>
+      <table>
           <thead>
             <tr>
               <th scope="col">Feature</th>
@@ -149,31 +133,26 @@
             </tr>
           </tbody>
         </table>
-      </section>
 
-      <section>
-        <h3>List Example</h3>
-        <div>
-          <h4>Unordered List</h4>
+      <h3>List Example</h3>
+      <h4>Unordered List</h4>
+      <ul>
+        <li>First item</li>
+        <li>Second item with nested list:
           <ul>
-            <li>First item</li>
-            <li>Second item with nested list:
-              <ul>
-                <li>Nested item 1</li>
-                <li>Nested item 2</li>
-              </ul>
-            </li>
-            <li>Third item</li>
+            <li>Nested item 1</li>
+            <li>Nested item 2</li>
           </ul>
+        </li>
+        <li>Third item</li>
+      </ul>
 
-          <h4>Ordered List</h4>
-          <ol>
-            <li>First step</li>
-            <li>Second step</li>
-            <li>Third step</li>
-          </ol>
-        </div>
-      </section>
+      <h4>Ordered List</h4>
+      <ol>
+        <li>First step</li>
+        <li>Second step</li>
+        <li>Third step</li>
+      </ol>
     </article>
 
     <article id="features">
@@ -275,7 +254,7 @@
   &lt;meta charset="UTF-8"&gt;
   &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
   &lt;title&gt;My Page&lt;/title&gt;
-  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css"&gt;
+  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@svmukhin/edible-css@latest/dist/edible.min.css"&gt;
 &lt;/head&gt;
 &lt;body&gt;
   &lt;header&gt;
@@ -309,7 +288,7 @@
       <small>
         EdibleCSS v0.1.0 · 
         <a href="https://github.com/svmukhin/edible-css">GitHub</a> · 
-        <a href="https://github.com/svmukhin/edible-css/blob/main/LICENSE.txt">MIT License</a> · 
+        <a href="https://github.com/svmukhin/edible-css/blob/master/LICENSE.txt">MIT License</a> · 
         Made with ❤️ for developers with no design skills
       </small>
     </p>
