@@ -23,13 +23,19 @@ semantic HTML5 with a single `<link>` tag.
 Add this line to your HTML `<head>`:
 
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/svmukhin/edible-css@main/dist/edible.min.css"
+/>
 ```
 
 Or via unpkg:
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.min.css">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.min.css"
+/>
 ```
 
 ### npm
@@ -41,7 +47,7 @@ npm install @svmukhin/edible-css
 Then import in your CSS or JavaScript:
 
 ```css
-@import '@svmukhin/edible-css/dist/edible.css';
+@import "@svmukhin/edible-css/dist/edible.css";
 ```
 
 Or link to `node_modules/@svmukhin/edible-css/dist/edible.css` in your HTML.
@@ -58,46 +64,86 @@ Download the CSS file directly from GitHub:
 Then include it in your project:
 
 ```html
-<link rel="stylesheet" href="path/to/edible.min.css">
+<link rel="stylesheet" href="path/to/edible.min.css" />
 ```
 
 ## Usage
 
-### Basic Example
+EdibleCSS is designed with one principle: **"Just add HTML."** Write semantic
+HTML5 markup and get professional styling automatically—no classes, no
+configuration, no decisions.
+
+### Getting Started
+
+1. Add the CDN link to your HTML `<head>`
+2. Write semantic HTML5
+3. Done!
+
+That's it. Your page is now styled.
+
+### Live Examples
+
+See EdibleCSS in action with these live demos (hosted on GitHub Pages):
+
+- **[Basic Example](https://svmukhin.github.io/edible-css/examples/basic.html)**
+- **[Typography](https://svmukhin.github.io/edible-css/examples/typography.html)**
+- **[Forms](https://svmukhin.github.io/edible-css/examples/form.html)**
+- **[Tables](https://svmukhin.github.io/edible-css/examples/table.html)**
+- **[Navigation](https://svmukhin.github.io/edible-css/examples/navigation.html)**
+
+All examples use only semantic HTML—no CSS classes required.
+
+### Quick Start Template
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Page</title>
-  <link rel="stylesheet" href="https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.min.css">
-</head>
-<body>
-  <header>
-    <h1>Welcome to My Site</h1>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Page</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@svmukhin/edible-css@latest/dist/edible.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Site</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <article>
-      <h2>Article Title</h2>
-      <p>Just write semantic HTML. EdibleCSS takes care of the styling.</p>
-    </article>
-  </main>
+    <main>
+      <article>
+        <h2>Just Write HTML</h2>
+        <p>Use semantic HTML5 elements. EdibleCSS handles the rest.</p>
+        <p>No classes, no thinking, no decisions. Just content.</p>
+      </article>
+    </main>
 
-  <footer>
-    <p>&copy; 2026 Your Name</p>
-  </footer>
-</body>
+    <footer>
+      <p>&copy; 2026 Your Name</p>
+    </footer>
+  </body>
 </html>
+```
+
+### Common Patterns
+
+**Navigation Menu:**
+
+```html
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+</nav>
 ```
 
 ### Form Example
@@ -105,7 +151,7 @@ Then include it in your project:
 ```html
 <form>
   <label for="email">Email:</label>
-  <input type="email" id="email" placeholder="you@example.com">
+  <input type="email" id="email" placeholder="you@example.com" />
 
   <label for="message">Message:</label>
   <textarea id="message" rows="5"></textarea>
@@ -114,7 +160,7 @@ Then include it in your project:
 </form>
 ```
 
-### Table Example
+**Data Table:**
 
 ```html
 <table>
@@ -129,12 +175,20 @@ Then include it in your project:
       <td>Alice</td>
       <td>Admin</td>
     </tr>
-    <tr>
-      <td>Bob</td>
-      <td>User</td>
-    </tr>
   </tbody>
 </table>
+```
+
+**Content Article:**
+
+```html
+<article>
+  <h2>Article Title</h2>
+  <p>Paragraph text with <strong>bold</strong> and <em>italic</em>.</p>
+  <blockquote>
+    <p>A quote looks great automatically.</p>
+  </blockquote>
+</article>
 ```
 
 ## What Gets Styled
