@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/svmukhin/edible-css/compare/v1.0.5...v1.1.0) (2026-03-04)
+
+
+### Features
+
+* **tokens:** replace Major Third scale with Tailwind-inspired typography scale ([12ea82a](https://github.com/svmukhin/edible-css/commit/12ea82a7cab654a4f57b76a58a0790bed3a41d4a))
+
 ## [1.0.5](https://github.com/svmukhin/edible-css/compare/v1.0.4...v1.0.5) (2026-02-04)
 
 
