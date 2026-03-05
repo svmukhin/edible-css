@@ -12,8 +12,8 @@ h6 {
   color: var(--text-primary);
   font-weight: 700;
   line-height: 1.2;
-  margin-top: var(--space-xl);
-  margin-bottom: var(--space-md);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
 h1:first-child,
