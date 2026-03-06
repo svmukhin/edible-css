@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.0](https://github.com/svmukhin/edible-css/compare/v1.1.0...v1.2.0) (2026-03-06)
+
+
+### Features
+
+* **typography:** use em-based margins for headings instead of fixed rem ([1551351](https://github.com/svmukhin/edible-css/commit/1551351f193be8af7762dc0c09a9f151fd2084e0))
+
+
+### Bug Fixes
+
+* **forms:** improve checkbox and radio button spacing and alignment ([a28c86f](https://github.com/svmukhin/edible-css/commit/a28c86f1097087269f346cc00e111cc0547812ce))
+
 ## [1.1.0](https://github.com/svmukhin/edible-css/compare/v1.0.5...v1.1.0) (2026-03-04)
 
 
