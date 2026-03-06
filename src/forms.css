@@ -207,10 +207,9 @@ input[type="checkbox"],
 input[type="radio"] {
   width: 1.125rem;
   height: 1.125rem;
-  margin-right: var(--space-xs);
   cursor: pointer;
-  vertical-align: middle;
   accent-color: var(--accent);
+  flex-shrink: 0;
 }
 
 input[type="checkbox"]:disabled,
@@ -246,9 +245,11 @@ label {
   cursor: pointer;
 }
 
-label:has(+ input[type="checkbox"]),
-label:has(+ input[type="radio"]) {
-  display: inline;
-  margin-bottom: 0;
+label:has(> input[type="checkbox"]),
+label:has(> input[type="radio"]) {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
   font-weight: normal;
 }
