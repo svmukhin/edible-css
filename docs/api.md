@@ -8,15 +8,16 @@ Complete reference of all HTML elements styled by EdibleCSS v0.1.0.
 
 **Elements:** `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
 
-All heading levels are styled with appropriate font sizes using a 1.25 modular
-scale. Margins are automatically adjusted for proper spacing.
+All heading levels are styled with appropriate font sizes using a Tailwind-inspired
+scale. Margins scale with the heading's own font size (`1.5em` top, `0.5em` bottom)
+so spacing is always proportional to the heading weight.
 
-- `<h1>`: Largest heading (3.052rem)
-- `<h2>`: Second level (2.441rem)
-- `<h3>`: Third level (1.953rem)
-- `<h4>`: Fourth level (1.563rem)
-- `<h5>`: Fifth level (1.25rem)
-- `<h6>`: Sixth level (1.25rem, semi-bold)
+- `<h1>`: Largest heading (2.25rem / 36px)
+- `<h2>`: Second level (1.875rem / 30px)
+- `<h3>`: Third level (1.5rem / 24px)
+- `<h4>`: Fourth level (1.25rem / 20px)
+- `<h5>`: Fifth level (1.125rem / 18px)
+- `<h6>`: Sixth level (1.125rem / 18px, semi-bold)
 
 ### Paragraphs
 
@@ -166,7 +167,15 @@ Styled select menus with:
 
 - Accent color applied
 - Focus outline for accessibility
-- Proper sizing and spacing
+- Sized at 1.125rem × 1.125rem
+- When wrapped in `<label>`: flex layout with `gap` for alignment, 8px vertical
+  spacing between items
+
+```html
+<label>
+  <input type="checkbox"> Option text
+</label>
+```
 
 ### Form Grouping
 
@@ -360,22 +369,26 @@ EdibleCSS uses these design tokens (for advanced customization):
 
 ### Typography Scale
 
-- `--font-sm`: 0.8rem
-- `--font-md`: 1rem
-- `--font-lg`: 1.25rem
-- `--font-xl`: 1.563rem
-- `--font-2xl`: 1.953rem
-- `--font-3xl`: 2.441rem
-- `--font-4xl`: 3.052rem
+Tailwind-inspired scale with human-friendly values:
+
+- `--font-sm`: 0.875rem (14px)
+- `--font-md`: 1rem (16px)
+- `--font-lg`: 1.125rem (18px)
+- `--font-xl`: 1.25rem (20px)
+- `--font-2xl`: 1.5rem (24px)
+- `--font-3xl`: 1.875rem (30px)
+- `--font-4xl`: 2.25rem (36px)
 
 ### Spacing Scale
 
-- `--space-xs`: 0.25rem (2px)
-- `--space-sm`: 0.5rem (4px)
-- `--space-md`: 1rem (8px)
-- `--space-lg`: 1.5rem (12px)
-- `--space-xl`: 2rem (16px)
-- `--space-2xl`: 3rem (24px)
+8px base unit with T-shirt sizing:
+
+- `--space-xs`: 0.25rem (4px)
+- `--space-sm`: 0.5rem (8px)
+- `--space-md`: 1rem (16px)
+- `--space-lg`: 1.5rem (24px)
+- `--space-xl`: 2rem (32px)
+- `--space-2xl`: 3rem (48px)
 
 ## Browser Support
 
