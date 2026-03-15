@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2026 Sergei Mukhin
+// SPDX-FileCopyrightText: Copyright (c) 2026 Sergei Mukhin
 // SPDX-License-Identifier: MIT
 
 module.exports = async (page, scenario, viewport) => {

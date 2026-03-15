@@ -1,4 +1,4 @@
-# SPDX-FileCopyrightText: 2026 Sergei Mukhin
+# SPDX-FileCopyrightText: Copyright (c) 2026 Sergei Mukhin
 # SPDX-License-Identifier: MIT
 
 version = 1
@@ -23,5 +23,5 @@ path = [
   "docs/**.md",
 ]
 precedence = "aggregate"
-SPDX-FileCopyrightText = "2026 Sergei Mukhin"
+SPDX-FileCopyrightText = "Copyright (c) 2026 Sergei Mukhin"
 SPDX-License-Identifier = "MIT"
