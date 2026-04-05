@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/svmukhin/edible-css/compare/v1.2.0...v1.2.1) (2026-04-05)
+
+
+### Bug Fixes
+
+* **#27:** added margin-inline-end spacing between buttons ([50743fd](https://github.com/svmukhin/edible-css/commit/50743fd40308b64a801a4c7ccc662662a815cee2))
+
 ## [1.2.0](https://github.com/svmukhin/edible-css/compare/v1.1.0...v1.2.0) (2026-03-06)
 
 
