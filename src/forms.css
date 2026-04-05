@@ -158,6 +158,7 @@ input[type="reset"] {
   text-decoration: none;
   transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
   margin-bottom: var(--space-sm);
+  margin-inline-end: var(--space-sm);
 }
 
 button:hover,
