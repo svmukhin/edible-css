@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.3.0](https://github.com/svmukhin/edible-css/compare/v1.2.1...v1.3.0) (2026-04-23)
+
+
+### Features
+
+* **#34:** added a text color change to the hover state ([03dde2d](https://github.com/svmukhin/edible-css/commit/03dde2d034f31cf717599da73ff68b11b388c33c))
+
+
+### Bug Fixes
+
+* **#31:** replace the transparent value with a solid color token ([e5c5dba](https://github.com/svmukhin/edible-css/commit/e5c5dbaa41f157860cffbf703ae010b5d72bc130))
+
 ## [1.2.1](https://github.com/svmukhin/edible-css/compare/v1.2.0...v1.2.1) (2026-04-05)
 
 
