@@ -29,11 +29,12 @@ nav a {
   text-decoration: none;
   color: var(--text-primary);
   border-radius: 4px;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 nav a:hover {
   background-color: var(--bg-tertiary);
+  color: var(--button-bg-hover);
 }
 
 nav a:focus {
