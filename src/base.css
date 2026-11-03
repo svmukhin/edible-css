@@ -56,6 +56,27 @@ body {
   }
 }
 
+/* Large desktop - use more of the available width */
+@media (min-width: 1280px) {
+  body {
+    max-width: 130ch;
+  }
+}
+
+/* Wide desktop */
+@media (min-width: 1440px) {
+  body {
+    max-width: 145ch;
+  }
+}
+
+/* Full HD and above */
+@media (min-width: 1920px) {
+  body {
+    max-width: 160ch;
+  }
+}
+
 hr {
   border: none;
   border-top: 1px solid var(--border);
