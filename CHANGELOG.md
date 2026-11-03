@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/svmukhin/edible-css/compare/v1.3.0...v1.4.0) (2026-11-03)
+
+
+### Features
+
+* **#36:** added large-screen breakpoints for content width ([06fd238](https://github.com/svmukhin/edible-css/commit/06fd2382e75bab243ea358caebba18d4f0ecb295))
+
 ## [1.3.0](https://github.com/svmukhin/edible-css/compare/v1.2.1...v1.3.0) (2026-04-23)
 
 
