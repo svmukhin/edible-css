@@ -316,8 +316,11 @@ Horizontal dividers with subtle border.
 ### Breakpoints
 
 - **Mobile (default)**: 16px base font, 70ch max-width
-- **Tablet (≥768px)**: 17px base font, 75ch max-width
-- **Desktop (≥1024px)**: 18px base font, 80ch max-width
+- **Tablet (≥768px)**: 17px base font, 90ch max-width
+- **Desktop (≥1024px)**: 18px base font, 110ch max-width
+- **Large desktop (≥1280px)**: 18px base font, 130ch max-width
+- **Wide desktop (≥1440px)**: 18px base font, 145ch max-width
+- **Full HD (≥1920px)**: 18px base font, 160ch max-width
 
 ### Dark Mode
 
